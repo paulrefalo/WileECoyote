@@ -12,6 +12,7 @@
 		4874B8D51F29AFDD00F47FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D31F29AFDD00F47FF0 /* Main.storyboard */; };
 		4874B8D71F29AFDD00F47FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D61F29AFDD00F47FF0 /* Assets.xcassets */; };
 		4874B8DA1F29AFDD00F47FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */; };
+		4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		4874B8D61F29AFDD00F47FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4874B8D91F29AFDD00F47FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4874B8DB1F29AFDD00F47FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		4874B8E41F2B05C700F47FF0 /* Antsy_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Antsy_Light.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +60,21 @@
 				4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */,
 				4874B8D11F29AFDD00F47FF0 /* ViewController.swift */,
 				4874B8D31F29AFDD00F47FF0 /* Main.storyboard */,
+				4874B8E31F2B042F00F47FF0 /* Resources */,
 				4874B8D61F29AFDD00F47FF0 /* Assets.xcassets */,
 				4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */,
 				4874B8DB1F29AFDD00F47FF0 /* Info.plist */,
 			);
 			path = WileECoyote;
+			sourceTree = "<group>";
+		};
+		4874B8E31F2B042F00F47FF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4874B8E41F2B05C700F47FF0 /* Antsy_Light.otf */,
+				4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +152,7 @@
 			files = (
 				4874B8D21F29AFDD00F47FF0 /* ViewController.swift in Sources */,
 				4874B8D01F29AFDD00F47FF0 /* AppDelegate.swift in Sources */,
+				4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
