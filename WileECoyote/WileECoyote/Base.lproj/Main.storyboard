@@ -29,77 +29,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRroad" translatesAutoresizingMaskIntoConstraints="NO" id="duR-ih-GUr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oV2-FW-eDF" userLabel="FilterView">
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oV2-FW-eDF" userLabel="FilterView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i8-oh-yXL" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                        <rect key="frame" x="88" y="230" width="199" height="50"/>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="q5Y-vP-yfE"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
-                                        <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Parts Diagrams">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-wu-EKQ" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                        <rect key="frame" x="88" y="355" width="199" height="50"/>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="aaM-VG-aly"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
-                                        <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Order Queue">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRx-OS-Rjw" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                        <rect key="frame" x="88" y="480" width="199" height="50"/>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="76D-aS-8hQ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
-                                        <color key="tintColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Order History">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-IS-CGM">
-                                        <rect key="frame" x="115" y="37" width="146.5" height="108"/>
+                                        <rect key="frame" x="114.5" y="100" width="146.5" height="57.5"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="50"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -107,25 +41,90 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="5i8-oh-yXL" firstAttribute="top" secondItem="oV2-FW-eDF" secondAttribute="top" constant="230" id="BhO-hf-4Ha"/>
-                                    <constraint firstItem="5i8-oh-yXL" firstAttribute="leading" secondItem="oV2-FW-eDF" secondAttribute="leading" constant="88" id="Blk-DR-8aJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="B9f-wu-EKQ" secondAttribute="trailing" constant="88" id="EAB-r6-qCP"/>
-                                    <constraint firstItem="ZRx-OS-Rjw" firstAttribute="top" secondItem="B9f-wu-EKQ" secondAttribute="bottom" constant="75" id="Kac-mR-Jt5"/>
-                                    <constraint firstItem="DwC-IS-CGM" firstAttribute="top" secondItem="oV2-FW-eDF" secondAttribute="top" constant="37" id="OIg-5F-G0U"/>
+                                    <constraint firstItem="DwC-IS-CGM" firstAttribute="top" secondItem="oV2-FW-eDF" secondAttribute="top" constant="100" id="OIg-5F-G0U"/>
                                     <constraint firstItem="DwC-IS-CGM" firstAttribute="centerX" secondItem="oV2-FW-eDF" secondAttribute="centerX" id="VxR-K9-UiH"/>
-                                    <constraint firstItem="ZRx-OS-Rjw" firstAttribute="leading" secondItem="oV2-FW-eDF" secondAttribute="leading" constant="88" id="YhY-ms-aOH"/>
-                                    <constraint firstAttribute="trailing" secondItem="5i8-oh-yXL" secondAttribute="trailing" constant="88" id="dTY-FC-Iig"/>
-                                    <constraint firstItem="5i8-oh-yXL" firstAttribute="centerX" secondItem="oV2-FW-eDF" secondAttribute="centerX" id="ghO-ki-01I"/>
-                                    <constraint firstItem="B9f-wu-EKQ" firstAttribute="leading" secondItem="oV2-FW-eDF" secondAttribute="leading" constant="88" id="lwk-rv-8Qk"/>
-                                    <constraint firstItem="B9f-wu-EKQ" firstAttribute="top" secondItem="5i8-oh-yXL" secondAttribute="bottom" constant="75" id="prd-yH-gRG"/>
-                                    <constraint firstItem="5i8-oh-yXL" firstAttribute="top" secondItem="DwC-IS-CGM" secondAttribute="bottom" constant="85" id="ujt-gS-Stk"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZRx-OS-Rjw" secondAttribute="trailing" constant="88" id="zpO-dr-r4J"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="JJi-Re-uMj">
+                                <rect key="frame" x="75" y="264" width="225" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i8-oh-yXL" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="q5Y-vP-yfE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
+                                        <state key="normal" title="Parts Diagrams">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="dQT-Ob-AsA" kind="show" identifier="partsSegue" id="Rp8-b1-hmN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-wu-EKQ" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="125" width="225" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aaM-VG-aly"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
+                                        <state key="normal" title="Order Queue">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRx-OS-Rjw" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="250" width="225" height="50"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="76D-aS-8hQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
+                                        <state key="normal" title="Order History">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="hak-42-U5g"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JJi-Re-uMj" firstAttribute="centerX" secondItem="oV2-FW-eDF" secondAttribute="centerX" id="0ww-fl-eKX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oV2-FW-eDF" secondAttribute="bottom" id="44i-j2-yqi"/>
+                            <constraint firstItem="JJi-Re-uMj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="KxY-IZ-USu"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="duR-ih-GUr" secondAttribute="bottom" id="Stv-a8-0Oh"/>
                             <constraint firstItem="duR-ih-GUr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b4X-a2-dsV"/>
                             <constraint firstItem="oV2-FW-eDF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gnE-cE-plC"/>
@@ -135,7 +134,7 @@
                             <constraint firstAttribute="trailing" secondItem="oV2-FW-eDF" secondAttribute="trailing" id="vi6-wN-sl7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="k7D-Y5-0ML"/>
+                    <navigationItem key="navigationItem" id="WAv-h4-0lC"/>
                     <connections>
                         <outlet property="filterView" destination="oV2-FW-eDF" id="alK-RW-3n2"/>
                         <outlet property="orderHistory" destination="ZRx-OS-Rjw" id="K1q-ms-Efb"/>
@@ -145,10 +144,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="pox-F7-T1j">
+            <objects>
+                <viewController id="5j7-Sg-ihg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1gP-Hf-hgN"/>
+                        <viewControllerLayoutGuide type="bottom" id="oIg-8K-LUN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I4e-Uq-BiT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRlandscape" translatesAutoresizingMaskIntoConstraints="NO" id="Bwj-jP-bZX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="QU8-oY-c3h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjE-t5-SZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908" y="465.51724137931041"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="YCz-9Q-m9q">
+            <objects>
+                <viewController id="EiV-HZ-Xnq" customClass="partsTabVC" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0mh-yk-2tN"/>
+                        <viewControllerLayoutGuide type="bottom" id="3GT-2n-Bn8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QuG-l0-dfy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRlandscape" translatesAutoresizingMaskIntoConstraints="NO" id="46e-5s-Y5r">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="NI6-Ng-RRk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xK-ZC-s8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908" y="-188.45577211394306"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7Ys-50-fIC">
+            <objects>
+                <tabBarController id="dQT-Ob-AsA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qcz-Du-fC5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EiV-HZ-Xnq" kind="relationship" relationship="viewControllers" id="Gbl-DG-lYj"/>
+                        <segue destination="5j7-Sg-ihg" kind="relationship" relationship="viewControllers" id="jbn-ZY-hKi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2V-TA-GMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="138"/>
         </scene>
     </scenes>
     <resources>
+        <image name="RRlandscape" width="706" height="540"/>
         <image name="RRroad" width="703" height="532"/>
     </resources>
 </document>

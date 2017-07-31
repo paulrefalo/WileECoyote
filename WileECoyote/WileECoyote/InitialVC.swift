@@ -21,7 +21,7 @@ class InitialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureUI()
+//        configureUI()
     }
     
     func configureUI() {
