@@ -14,6 +14,7 @@
 		4874B8DA1F29AFDD00F47FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */; };
 		4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */; };
 		48BB0C681F2EBB9000B2ED1F /* partsTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */; };
+		48BB0C6A1F2EFE9D00B2ED1F /* queueTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB0C691F2EFE9D00B2ED1F /* queueTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
 		4874B8E41F2B05C700F47FF0 /* Antsy_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Antsy_Light.otf; sourceTree = "<group>"; };
 		48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = partsTabVC.swift; sourceTree = "<group>"; };
+		48BB0C691F2EFE9D00B2ED1F /* queueTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queueTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */,
-				4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */,
 				4874B8D31F29AFDD00F47FF0 /* Main.storyboard */,
+				4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */,
 				48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */,
+				48BB0C691F2EFE9D00B2ED1F /* queueTab.swift */,
 				4874B8E31F2B042F00F47FF0 /* Resources */,
 				4874B8D61F29AFDD00F47FF0 /* Assets.xcassets */,
 				4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 			files = (
 				4874B8D21F29AFDD00F47FF0 /* InitialVC.swift in Sources */,
 				48BB0C681F2EBB9000B2ED1F /* partsTabVC.swift in Sources */,
+				48BB0C6A1F2EFE9D00B2ED1F /* queueTab.swift in Sources */,
 				4874B8D01F29AFDD00F47FF0 /* AppDelegate.swift in Sources */,
 				4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */,
 			);

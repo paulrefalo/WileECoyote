@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dQT-Ob-AsA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRroad" translatesAutoresizingMaskIntoConstraints="NO" id="duR-ih-GUr">
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RRroad" translatesAutoresizingMaskIntoConstraints="NO" id="duR-ih-GUr">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oV2-FW-eDF" userLabel="FilterView">
@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="JJi-Re-uMj">
-                                <rect key="frame" x="75" y="264" width="225" height="300"/>
+                                <rect key="frame" x="75" y="220" width="225" height="300"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i8-oh-yXL" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="50"/>
@@ -68,9 +68,6 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="dQT-Ob-AsA" kind="show" identifier="partsSegue" id="Rp8-b1-hmN"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9f-wu-EKQ" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="125" width="225" height="50"/>
@@ -144,12 +141,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2015.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="2418" y="-253"/>
         </scene>
-        <!--Item 2-->
+        <!--Parts-->
         <scene sceneID="pox-F7-T1j">
             <objects>
-                <viewController id="5j7-Sg-ihg" sceneMemberID="viewController">
+                <viewController title="Parts" id="5j7-Sg-ihg" customClass="partsTabVC" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1gP-Hf-hgN"/>
                         <viewControllerLayoutGuide type="bottom" id="oIg-8K-LUN"/>
@@ -169,12 +166,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjE-t5-SZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="465.51724137931041"/>
+            <point key="canvasLocation" x="3470" y="545"/>
         </scene>
-        <!--Item 1-->
+        <!--Dashboard-->
         <scene sceneID="YCz-9Q-m9q">
             <objects>
-                <viewController id="EiV-HZ-Xnq" customClass="partsTabVC" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="EiV-HZ-Xnq" customClass="InitialVC" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0mh-yk-2tN"/>
                         <viewControllerLayoutGuide type="bottom" id="3GT-2n-Bn8"/>
@@ -183,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRlandscape" translatesAutoresizingMaskIntoConstraints="NO" id="46e-5s-Y5r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRroad" translatesAutoresizingMaskIntoConstraints="NO" id="46e-5s-Y5r">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -194,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xK-ZC-s8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3908" y="-188.45577211394306"/>
+            <point key="canvasLocation" x="4212" y="174"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Ys-50-fIC">
@@ -208,15 +205,42 @@
                     <connections>
                         <segue destination="EiV-HZ-Xnq" kind="relationship" relationship="viewControllers" id="Gbl-DG-lYj"/>
                         <segue destination="5j7-Sg-ihg" kind="relationship" relationship="viewControllers" id="jbn-ZY-hKi"/>
+                        <segue destination="evi-W8-S5e" kind="relationship" relationship="viewControllers" id="RYJ-so-HB5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2V-TA-GMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="138"/>
+            <point key="canvasLocation" x="2370" y="545"/>
+        </scene>
+        <!--Queue-->
+        <scene sceneID="Sz1-Ii-a0X">
+            <objects>
+                <viewController title="Queue" id="evi-W8-S5e" customClass="queueTabVC" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kK1-zz-Zf0"/>
+                        <viewControllerLayoutGuide type="bottom" id="6lg-5A-7Ss"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="srq-2I-3GE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRlandscape2" translatesAutoresizingMaskIntoConstraints="NO" id="Cr1-eQ-8EG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="CCV-d4-jiD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qC-cT-BgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4212" y="906"/>
         </scene>
     </scenes>
     <resources>
         <image name="RRlandscape" width="706" height="540"/>
+        <image name="RRlandscape2" width="400" height="306"/>
         <image name="RRroad" width="703" height="532"/>
     </resources>
 </document>

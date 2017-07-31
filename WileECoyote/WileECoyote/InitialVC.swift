@@ -13,9 +13,9 @@ class InitialVC: UIViewController {
     // MARK: Outlets
     
     
-    @IBOutlet weak var partsDiagram: UIButtonX!
-    @IBOutlet weak var orderQueue: UIButtonX!
-    @IBOutlet weak var orderHistory: UIButtonX!
+//    @IBOutlet weak var partsDiagram: UIButtonX!
+//    @IBOutlet weak var orderQueue: UIButtonX!
+//    @IBOutlet weak var orderHistory: UIButtonX!
 
     @IBOutlet weak var filterView: UIView!
     override func viewDidLoad() {
@@ -24,14 +24,6 @@ class InitialVC: UIViewController {
 //        configureUI()
     }
     
-    func configureUI() {
-        // move buttons to the top layer
-        partsDiagram.layer.zPosition = 5
-        orderQueue.layer.zPosition = 5
-        orderHistory.layer.zPosition = 5
-        
-        filterView.layer.zPosition = 1
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
