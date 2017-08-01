@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2418" y="-253"/>
+            <point key="canvasLocation" x="5340" y="-225"/>
         </scene>
         <!--Parts-->
         <scene sceneID="pox-F7-T1j">
@@ -159,14 +159,115 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-Te-QYE">
+                                <rect key="frame" x="75" y="183" width="225" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6n9-aF-a54" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="kKr-kD-VWk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
+                                        <state key="normal" title="Rocket Sled">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfs-fz-lgZ" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="125" width="225" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nOu-v3-xtB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
+                                        <state key="normal" title="Spherical Bomb">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="tUb-U6-D85" kind="show" id="Kze-O2-rgC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acn-dS-3Pr" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="250" width="225" height="50"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3a2-ih-1PD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Antsy-Light" family="Antsy" pointSize="24"/>
+                                        <state key="normal" title="Tiger Trap">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animate" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="popIn" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="MjA-9u-afp"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dU1-Te-QYE" firstAttribute="centerX" secondItem="I4e-Uq-BiT" secondAttribute="centerX" id="6ES-PZ-fi2"/>
+                            <constraint firstItem="dU1-Te-QYE" firstAttribute="centerY" secondItem="I4e-Uq-BiT" secondAttribute="centerY" id="IK0-AO-2Dv"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="QU8-oY-c3h"/>
+                    <navigationItem key="navigationItem" id="8mT-i2-5bZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjE-t5-SZC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3470" y="545"/>
+            <point key="canvasLocation" x="5340" y="544.67766116941539"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gmh-cs-BzC">
+            <objects>
+                <viewController id="tUb-U6-D85" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IqR-TC-5Er"/>
+                        <viewControllerLayoutGuide type="bottom" id="ow5-Dr-9wv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GAj-Hf-uch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AcmeBomb" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-Z1-Ib1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udF-Cc-f7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6357.6000000000004" y="544.67766116941539"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="YCz-9Q-m9q">
@@ -191,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xK-ZC-s8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4212" y="174"/>
+            <point key="canvasLocation" x="3492" y="179"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7Ys-50-fIC">
@@ -204,7 +305,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="EiV-HZ-Xnq" kind="relationship" relationship="viewControllers" id="Gbl-DG-lYj"/>
-                        <segue destination="5j7-Sg-ihg" kind="relationship" relationship="viewControllers" id="jbn-ZY-hKi"/>
+                        <segue destination="ERY-NL-bkp" kind="relationship" relationship="viewControllers" id="jbn-ZY-hKi"/>
                         <segue destination="evi-W8-S5e" kind="relationship" relationship="viewControllers" id="RYJ-so-HB5"/>
                     </connections>
                 </tabBarController>
@@ -235,10 +336,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qC-cT-BgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4212" y="906"/>
+            <point key="canvasLocation" x="3492" y="911"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="hWI-NT-yzF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ERY-NL-bkp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="QU8-oY-c3h"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ksz-EB-UYB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5j7-Sg-ihg" kind="relationship" relationship="rootViewController" id="ht6-eC-koe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjz-OI-eaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4400.8000000000002" y="544.67766116941539"/>
         </scene>
     </scenes>
     <resources>
+        <image name="AcmeBomb" width="331" height="464"/>
         <image name="RRlandscape" width="706" height="540"/>
         <image name="RRlandscape2" width="400" height="306"/>
         <image name="RRroad" width="703" height="532"/>
