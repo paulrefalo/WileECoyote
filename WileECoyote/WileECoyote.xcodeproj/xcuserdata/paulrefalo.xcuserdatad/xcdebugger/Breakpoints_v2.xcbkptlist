@@ -17,5 +17,117 @@
             endingLineNumber = "10">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WileECoyote/RocketSledVC.swift"
+            timestampString = "523649757.767298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WileECoyote.rocketSledVC.viewDidAppear (Swift.Bool) -&gt; ()"
+                  moduleName = "WileECoyote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulrefalo/Documents/Developer/iOS/WileECoyote/WileECoyote/WileECoyote/RocketSledVC.swift"
+                  timestampString = "523645415.182708"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "1684">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WileECoyote.rocketSledVC.(viewDidAppear (Swift.Bool) -&gt; ()).(closure #1)"
+                  moduleName = "WileECoyote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulrefalo/Documents/Developer/iOS/WileECoyote/WileECoyote/WileECoyote/RocketSledVC.swift"
+                  timestampString = "523645415.184562"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WileECoyote/RocketSledVC.swift"
+            timestampString = "523649757.767298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "moveButton(scalarX:scalarY:button:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WileECoyote/RocketSledVC.swift"
+            timestampString = "523649757.767298"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "moveButton(scalarX:scalarY:button:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WileECoyote.rocketSledVC.moveButton (scalarX : Swift.Float, scalarY : Swift.Float, button : WileECoyote.UIButtonX) -&gt; ()"
+                  moduleName = "WileECoyote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulrefalo/Documents/Developer/iOS/WileECoyote/WileECoyote/WileECoyote/RocketSledVC.swift"
+                  timestampString = "523647122.014555"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WileECoyote.rocketSledVC.(moveButton (scalarX : Swift.Float, scalarY : Swift.Float, button : WileECoyote.UIButtonX) -&gt; ()).(closure #1)"
+                  moduleName = "WileECoyote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulrefalo/Documents/Developer/iOS/WileECoyote/WileECoyote/WileECoyote/RocketSledVC.swift"
+                  timestampString = "523647122.015999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "25">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
