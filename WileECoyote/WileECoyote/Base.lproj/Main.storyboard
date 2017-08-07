@@ -264,7 +264,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AcmeBomb" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-Z1-Ib1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueprintRocket" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-Z1-Ib1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -515,7 +515,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AcmeBurmeseTigerTrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bqs-z1-ne3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueprintLight" translatesAutoresizingMaskIntoConstraints="NO" id="Bqs-z1-ne3">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -528,9 +528,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AcmeBomb" width="331" height="464"/>
-        <image name="AcmeBurmeseTigerTrap" width="328" height="461"/>
         <image name="AcmeRocketSled" width="339" height="460"/>
+        <image name="BlueprintLight" width="1024" height="1024"/>
+        <image name="BlueprintRocket" width="1000" height="1000"/>
         <image name="RRlandscape" width="706" height="540"/>
         <image name="RRlandscape2" width="400" height="306"/>
         <image name="RRroad" width="703" height="532"/>
