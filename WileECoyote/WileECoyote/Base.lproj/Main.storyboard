@@ -255,7 +255,7 @@
         <!--Bomb-->
         <scene sceneID="gmh-cs-BzC">
             <objects>
-                <viewController title="Spherical Bomb" id="tUb-U6-D85" userLabel="Bomb" sceneMemberID="viewController">
+                <viewController title="Acme Bomb" id="tUb-U6-D85" userLabel="Bomb" customClass="AcmeBomb" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IqR-TC-5Er"/>
                         <viewControllerLayoutGuide type="bottom" id="ow5-Dr-9wv"/>
@@ -264,7 +264,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueprintLight" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-Z1-Ib1">
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueprintLight" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-Z1-Ib1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -456,6 +456,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ksz-EB-UYB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="40"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
