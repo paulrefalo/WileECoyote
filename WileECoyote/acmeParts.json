@@ -1,0 +1,34 @@
+[
+ {
+   "partNumber": "58-2662-41",
+   "partDescription": "Acme Label",
+   "partPriceUSD": 115,
+   "partQuantity": 0,
+   "partVendor": "Acme",
+   "partServiceBulletin": false
+ },
+ {
+   "partNumber": "58-2662-42",
+   "partDescription": "Blasting Cap",
+   "partPriceUSD": 85,
+   "partQuantity": 0,
+   "partVendor": "Acme",
+   "partServiceBulletin": false
+ },
+ {
+   "partNumber": "58-2662-43",
+   "partDescription": "Fuse",
+   "partPriceUSD": 35,
+   "partQuantity": 0,
+   "partVendor": "Acme",
+   "partServiceBulletin": true
+ },
+ {
+   "partNumber": "58-2662-44",
+   "partDescription": "Bomb Assembly",
+   "partPriceUSD": 1500,
+   "partQuantity": 0,
+   "partVendor": "Acme",
+   "partServiceBulletin": false
+ }
+]

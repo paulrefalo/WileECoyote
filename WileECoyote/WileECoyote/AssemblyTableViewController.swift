@@ -12,16 +12,18 @@ import CoreData
 class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     
     
-    // MARK:  Model
+    // MARK:  Properties
     
-    var managedObjectContext: NSManagedObjectContext? = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext
-    
-    
-    
+    var moc: NSManagedObjectContext?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // MARK:  Core Data Stack and get moc
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        moc = appDelegate.coreDataStack.managedObjectContext
+        guard (moc != nil) else { print("Could not get managedObjectContext"); return }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

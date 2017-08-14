@@ -14,9 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    lazy var coreDataStack = CoreDataStack(modelName: "Model")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Call JSON import functions
+        importPartsJSON()
+        
+        // Get sql db path
+        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        print("Core Data Stack file location:\n", urls[urls.count-1] as URL)
+        
         return true
     }
 
@@ -40,11 +49,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        self.saveContext()
+        coreDataStack.saveContext()
     }
     
     // MARK: - Core Data stack
-    
+    /*
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -87,40 +96,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    
-    private let modelName: String
-    
-    init(modelName: String) {
-        self.modelName = modelName
-    }
-    
-    lazy var managedContext: NSManagedObjectContext = {
-        return self.storeContainer.viewContext
-    }()
-    
-    private lazy var storeContainer: NSPersistentContainer = {
-        
-        let container = NSPersistentContainer(name: self.modelName)
-        container.loadPersistentStores { (storeDescription, error) in
-            if let error = error as NSError? {
-                print("Unresolved error \(error), \(error.userInfo)")
-            }
-        }
-        return container
-    }()
-    
-    func saveContext () {
-        guard managedContext.hasChanges else { return }
-        
-        do {
-            try managedContext.save()
-            print("  ***  managedContext saved from CDS")
-        } catch {
-            let nserror = error as NSError
-            print("Unresolved error \(nserror), \(nserror.userInfo)")
-        }
-    }
+    */
 
+    // MARK: - JSON Import
+    
+    func importPartsJSON() {
+        
+        // load pigment
+        let partsJsonURL = Bundle.main.url(forResource: "acmeParts", withExtension: "json")!
+        let partsJsonData = NSData(contentsOf: partsJsonURL)! as Data
+        let partsJsonArray = try! JSONSerialization.jsonObject(with: partsJsonData, options: [.allowFragments]) as! [AnyObject]
+
+        for partsDictionary in partsJsonArray {
+            
+            let partNumber = partsDictionary["partNumber"] as? String ?? ""
+            let partDescription = partsDictionary["partDescription"] as? String ?? ""
+            let partPriceUSD = partsDictionary["partPriceUSD"] as? Int16 ?? 0
+            let partQuantity = partsDictionary["partQuantity"] as? Int16 ?? 0
+            let partVendor = partsDictionary["partVendor"] as? String ?? ""
+            let partServiceBulletin = partsDictionary["partServiceBulletin"] as? Bool ?? false
+
+            let part = Part.part(withName: partNumber, in: coreDataStack.managedObjectContext)
+            
+            part.partNumber = partNumber
+            part.partDescription = partDescription
+            part.partPriceUSD = partPriceUSD
+            part.partQuantity = partQuantity
+            part.partVendor = partVendor
+            part.partServiceBulletin = partServiceBulletin
+            
+        }
+        
+        coreDataStack.saveContext()
+    }
 
 }
 

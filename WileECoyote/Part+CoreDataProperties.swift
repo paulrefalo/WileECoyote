@@ -2,7 +2,7 @@
 //  Part+CoreDataProperties.swift
 //  WileECoyote
 //
-//  Created by Paul ReFalo on 8/13/17.
+//  Created by Paul ReFalo on 8/14/17.
 //  Copyright © 2017 QSS. All rights reserved.
 //
 
@@ -21,6 +21,7 @@ extension Part {
     @NSManaged public var partQuantity: Int16
     @NSManaged public var partServiceBulletin: Bool
     @NSManaged public var partVendor: String?
+    @NSManaged public var partPriceUSD: Int16
     @NSManaged public var partSB: NSSet?
     @NSManaged public var uniqueOrder: Order?
 
