@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Order" representedClassName=".Order" syncable="YES">
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="deliveryCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryCompany" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deliveryZipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fullNameFSE" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueOrderID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Part" inverseName="uniqueOrder" inverseEntity="Part" syncable="YES"/>
+    </entity>
+    <entity name="Part" representedClassName=".Part" syncable="YES">
+        <attribute name="partDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partServiceBulletin" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="partVendor" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="partSB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ServiceBulletin" inverseName="partToSB" inverseEntity="ServiceBulletin" syncable="YES"/>
+        <relationship name="uniqueOrder" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="items" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <entity name="ServiceBulletin" representedClassName=".ServiceBulletin" syncable="YES">
+        <attribute name="textSB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueSBNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="partToSB" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Part" inverseName="partSB" inverseEntity="Part" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Order" positionX="-369" positionY="-135" width="128" height="180"/>
+        <element name="Part" positionX="-54" positionY="-9" width="128" height="150"/>
+        <element name="ServiceBulletin" positionX="106" positionY="180" width="128" height="90"/>
+    </elements>
+</model>

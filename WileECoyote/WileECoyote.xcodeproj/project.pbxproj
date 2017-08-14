@@ -13,6 +13,15 @@
 		4874B8D71F29AFDD00F47FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D61F29AFDD00F47FF0 /* Assets.xcassets */; };
 		4874B8DA1F29AFDD00F47FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */; };
 		4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */; };
+		48869C871F40FEA100923940 /* AssemblyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869C861F40FEA100923940 /* AssemblyTableViewController.swift */; };
+		48869C891F40FF1B00923940 /* AssemblyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869C881F40FF1B00923940 /* AssemblyTableViewCell.swift */; };
+		48869C8C1F41000000923940 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48869C8A1F41000000923940 /* Model.xcdatamodeld */; };
+		48869CAC1F410CC500923940 /* Part+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CA61F410CC500923940 /* Part+CoreDataClass.swift */; };
+		48869CAD1F410CC500923940 /* Part+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CA71F410CC500923940 /* Part+CoreDataProperties.swift */; };
+		48869CAE1F410CC500923940 /* ServiceBulletin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CA81F410CC500923940 /* ServiceBulletin+CoreDataClass.swift */; };
+		48869CAF1F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CA91F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift */; };
+		48869CB01F410CC500923940 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CAA1F410CC500923940 /* Order+CoreDataClass.swift */; };
+		48869CB11F410CC500923940 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CAB1F410CC500923940 /* Order+CoreDataProperties.swift */; };
 		489FA6D61F3583C9004D02FC /* RocketSledVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FA6D51F3583C9004D02FC /* RocketSledVC.swift */; };
 		489FA6D81F39A246004D02FC /* AcmeBomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489FA6D71F39A246004D02FC /* AcmeBomb.swift */; };
 		48BB0C681F2EBB9000B2ED1F /* partsTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */; };
@@ -29,6 +38,15 @@
 		4874B8DB1F29AFDD00F47FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
 		4874B8E41F2B05C700F47FF0 /* Antsy_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Antsy_Light.otf; sourceTree = "<group>"; };
+		48869C861F40FEA100923940 /* AssemblyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyTableViewController.swift; sourceTree = "<group>"; };
+		48869C881F40FF1B00923940 /* AssemblyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyTableViewCell.swift; sourceTree = "<group>"; };
+		48869C8B1F41000000923940 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		48869CA61F410CC500923940 /* Part+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Part+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48869CA71F410CC500923940 /* Part+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Part+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		48869CA81F410CC500923940 /* ServiceBulletin+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceBulletin+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48869CA91F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceBulletin+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		48869CAA1F410CC500923940 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48869CAB1F410CC500923940 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		489FA6D51F3583C9004D02FC /* RocketSledVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketSledVC.swift; sourceTree = "<group>"; };
 		489FA6D71F39A246004D02FC /* AcmeBomb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcmeBomb.swift; sourceTree = "<group>"; };
 		48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = partsTabVC.swift; sourceTree = "<group>"; };
@@ -65,8 +83,11 @@
 		4874B8CE1F29AFDD00F47FF0 /* WileECoyote */ = {
 			isa = PBXGroup;
 			children = (
+				48869C991F4109C400923940 /* Core Data */,
 				4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */,
 				4874B8D31F29AFDD00F47FF0 /* Main.storyboard */,
+				48869C881F40FF1B00923940 /* AssemblyTableViewCell.swift */,
+				48869C861F40FEA100923940 /* AssemblyTableViewController.swift */,
 				4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */,
 				48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */,
 				489FA6D71F39A246004D02FC /* AcmeBomb.swift */,
@@ -87,6 +108,21 @@
 				4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		48869C991F4109C400923940 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				48869CA61F410CC500923940 /* Part+CoreDataClass.swift */,
+				48869CA71F410CC500923940 /* Part+CoreDataProperties.swift */,
+				48869CA81F410CC500923940 /* ServiceBulletin+CoreDataClass.swift */,
+				48869CA91F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift */,
+				48869CAA1F410CC500923940 /* Order+CoreDataClass.swift */,
+				48869CAB1F410CC500923940 /* Order+CoreDataProperties.swift */,
+				48869C8A1F41000000923940 /* Model.xcdatamodeld */,
+			);
+			name = "Core Data";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,12 +198,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48869CB11F410CC500923940 /* Order+CoreDataProperties.swift in Sources */,
 				4874B8D21F29AFDD00F47FF0 /* InitialVC.swift in Sources */,
+				48869C871F40FEA100923940 /* AssemblyTableViewController.swift in Sources */,
+				48869CAF1F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift in Sources */,
+				48869C891F40FF1B00923940 /* AssemblyTableViewCell.swift in Sources */,
 				48BB0C681F2EBB9000B2ED1F /* partsTabVC.swift in Sources */,
+				48869CAC1F410CC500923940 /* Part+CoreDataClass.swift in Sources */,
 				489FA6D61F3583C9004D02FC /* RocketSledVC.swift in Sources */,
+				48869CAE1F410CC500923940 /* ServiceBulletin+CoreDataClass.swift in Sources */,
+				48869CAD1F410CC500923940 /* Part+CoreDataProperties.swift in Sources */,
 				48BB0C6A1F2EFE9D00B2ED1F /* queueTab.swift in Sources */,
 				4874B8D01F29AFDD00F47FF0 /* AppDelegate.swift in Sources */,
+				48869C8C1F41000000923940 /* Model.xcdatamodeld in Sources */,
 				4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */,
+				48869CB01F410CC500923940 /* Order+CoreDataClass.swift in Sources */,
 				489FA6D81F39A246004D02FC /* AcmeBomb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +382,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48869C8A1F41000000923940 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48869C8B1F41000000923940 /* Model.xcdatamodel */,
+			);
+			currentVersion = 48869C8B1F41000000923940 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = WileECoyote/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4874B8C41F29AFDC00F47FF0 /* Project object */;
 }
