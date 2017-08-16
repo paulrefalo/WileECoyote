@@ -11,11 +11,19 @@ import CoreData
 
 class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     
-    
     // MARK:  Properties
     
     var moc: NSManagedObjectContext?
+    
+    let sectionTitles: [String] = ["Instrumentation", "Acme Inc.", "Documents"]
+    let sectionImages: [UIImage] = [#imageLiteral(resourceName: "instrumentsThumbnail"), #imageLiteral(resourceName: "acmeThumbnail"), #imageLiteral(resourceName: "documentsThumbnail")]
+    
+    let s1Data: [String] = ["Row a", "Row b", "Row c"]
+    let s2Data: [String] = ["Row d", "Row e", "Row f"]
+    let s3Data: [String] = ["Row g", "Row h", "Row p"]
 
+    var sectionData: [Int : [String]] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +31,8 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         moc = appDelegate.coreDataStack.managedObjectContext
         guard (moc != nil) else { print("Could not get managedObjectContext"); return }
+        
+        sectionData = [0 : s1Data, 1 : s2Data, 2 : s3Data]
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,23 +50,49 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return sectionTitles.count
     }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.init(red: 240, green: 248, blue: 255, alpha: 1.0)
+        
+        let image = UIImageView(image: sectionImages[section])
+        image.frame = CGRect(x: 5, y: 5, width: 35, height: 35)
+        view.addSubview(image)
+
+        
+        let label = UILabel()
+        label.text = sectionTitles[section]
+        label.frame = CGRect(x: 45, y: 5, width: 100, height: 35)
+        view.addSubview(label)
+        
+        return view
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45
+    }
+    
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return sectionTitles[section]
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return (sectionData[section]?.count)!
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = sectionData[indexPath.section]?[indexPath.row]
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
