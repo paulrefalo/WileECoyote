@@ -14,7 +14,6 @@
 		4874B8DA1F29AFDD00F47FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */; };
 		4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */; };
 		48869C871F40FEA100923940 /* AssemblyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869C861F40FEA100923940 /* AssemblyTableViewController.swift */; };
-		48869C891F40FF1B00923940 /* AssemblyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869C881F40FF1B00923940 /* AssemblyTableViewCell.swift */; };
 		48869C8C1F41000000923940 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48869C8A1F41000000923940 /* Model.xcdatamodeld */; };
 		48869CAE1F410CC500923940 /* ServiceBulletin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CA81F410CC500923940 /* ServiceBulletin+CoreDataClass.swift */; };
 		48869CAF1F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48869CA91F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift */; };
@@ -41,7 +40,6 @@
 		4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
 		4874B8E41F2B05C700F47FF0 /* Antsy_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Antsy_Light.otf; sourceTree = "<group>"; };
 		48869C861F40FEA100923940 /* AssemblyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssemblyTableViewController.swift; path = WileECoyote/AssemblyTableViewController.swift; sourceTree = "<group>"; };
-		48869C881F40FF1B00923940 /* AssemblyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssemblyTableViewCell.swift; path = WileECoyote/AssemblyTableViewCell.swift; sourceTree = "<group>"; };
 		48869C8B1F41000000923940 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		48869CA81F410CC500923940 /* ServiceBulletin+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceBulletin+CoreDataClass.swift"; sourceTree = "<group>"; };
 		48869CA91F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ServiceBulletin+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		48869CB41F417EBE00923940 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				48869C881F40FF1B00923940 /* AssemblyTableViewCell.swift */,
 				48869C861F40FEA100923940 /* AssemblyTableViewController.swift */,
 				4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */,
 				48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */,
@@ -219,7 +216,6 @@
 				48869C871F40FEA100923940 /* AssemblyTableViewController.swift in Sources */,
 				48869CAF1F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift in Sources */,
 				48869CB81F4201DE00923940 /* Part+CoreDataProperties.swift in Sources */,
-				48869C891F40FF1B00923940 /* AssemblyTableViewCell.swift in Sources */,
 				48BB0C681F2EBB9000B2ED1F /* partsTabVC.swift in Sources */,
 				489FA6D61F3583C9004D02FC /* RocketSledVC.swift in Sources */,
 				48869CAE1F410CC500923940 /* ServiceBulletin+CoreDataClass.swift in Sources */,

@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Call JSON import functions
         importPartsJSON()
         
-        // Get sql db path
+        // Get sql db path -> Look in all of the folders in the directory to find the name.sqlite db
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         print("Core Data Stack file location:\n", urls[urls.count-1] as URL)
         

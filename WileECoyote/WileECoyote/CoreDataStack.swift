@@ -37,7 +37,7 @@ class CoreDataStack {
         
         do {
             try managedObjectContext.save()
-            print("  ***  managedContext saved from CDS")
+            print("  ***  managedObjectContext saved from CDS")
         } catch {
             let nserror = error as NSError
             print("Unresolved error \(nserror), \(nserror.userInfo)")
