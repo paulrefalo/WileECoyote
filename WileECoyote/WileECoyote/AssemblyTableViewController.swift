@@ -15,12 +15,14 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     
     var moc: NSManagedObjectContext?
     
-    let sectionTitles: [String] = ["Instrumentation", "Acme Inc.", "Documents"]
-    let sectionImages: [UIImage] = [#imageLiteral(resourceName: "instrumentsThumbnail"), #imageLiteral(resourceName: "acmeThumbnail"), #imageLiteral(resourceName: "documentsThumbnail")]
+    let sectionTitles: [String] = ["Instrumentation", "Acme Inc.", "Documents", "Solutions"]
+    let sectionImages: [UIImage] = [#imageLiteral(resourceName: "instrumentsThumbnail"), #imageLiteral(resourceName: "acmeThumbnail"), #imageLiteral(resourceName: "documentsThumbnail"), #imageLiteral(resourceName: "solutionsThumbnail")]
     
-    let s1Data: [String] = ["Row a", "Row b", "Row c"]
-    let s2Data: [String] = ["Row d", "Row e", "Row f"]
-    let s3Data: [String] = ["Row g", "Row h", "Row p"]
+    let s1Data: [String] = ["Legacy", "Blueline", "Ancillary Equpment"]
+    let s2Data: [String] = ["Spherical Bomb", "Magnetic Trap"]
+    let s3Data: [String] = ["Service Manual 8000", "Tuning Guide 17"]
+    let s4Data: [String] = ["Dihydrogen Monoxide", "PPG Solution", "Ethanol"]
+
 
     var sectionData: [Int : [String]] = [:]
     
@@ -32,7 +34,7 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
         moc = appDelegate.coreDataStack.managedObjectContext
         guard (moc != nil) else { print("Could not get managedObjectContext"); return }
         
-        sectionData = [0 : s1Data, 1 : s2Data, 2 : s3Data]
+        sectionData = [0 : s1Data, 1 : s2Data, 2 : s3Data, 3 : s4Data]
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -55,7 +57,8 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView()
-        view.backgroundColor = UIColor.init(red: 240, green: 248, blue: 255, alpha: 1.0)
+        let color = UIColor.init(red: 0.94, green: 0.97, blue: 1.0, alpha: 1.0)
+        view.backgroundColor = color //UIColor.init(red: 173, green: 216, blue: 230, alpha: 1.0)
         
         let image = UIImageView(image: sectionImages[section])
         image.frame = CGRect(x: 5, y: 5, width: 35, height: 35)
@@ -64,7 +67,7 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
         
         let label = UILabel()
         label.text = sectionTitles[section]
-        label.frame = CGRect(x: 45, y: 5, width: 100, height: 35)
+        label.frame = CGRect(x: 45, y: 5, width: 200, height: 35)
         view.addSubview(label)
         
         return view
@@ -92,6 +95,15 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Section \(indexPath.section), Row : \(indexPath.row)")
+        print(self.sectionTitles[indexPath.section])
+        let section = indexPath.section
+        let row = indexPath.row
+        print(self.sectionData[section]?[row] ?? "Section/Row default")
+    }
+    
  
 
     /*

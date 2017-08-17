@@ -243,7 +243,7 @@
             </objects>
             <point key="canvasLocation" x="5796" y="-1057"/>
         </scene>
-        <!--Item-->
+        <!--Assembly Table View Controller-->
         <scene sceneID="MVf-gc-y3g">
             <objects>
                 <tableViewController id="YeL-px-PUa" customClass="AssemblyTableViewController" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
@@ -266,11 +266,11 @@
                             <outlet property="delegate" destination="YeL-px-PUa" id="ttt-vC-Are"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Zxn-X2-gTE"/>
+                    <navigationItem key="navigationItem" id="3AJ-5c-mZq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lt2-Ae-3DK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4473" y="558"/>
+            <point key="canvasLocation" x="5412" y="557.27136431784118"/>
         </scene>
         <!--Bomb-->
         <scene sceneID="gmh-cs-BzC">
@@ -396,7 +396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udF-Cc-f7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5796" y="559"/>
+            <point key="canvasLocation" x="6735.1999999999998" y="558.17091454272872"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="YCz-9Q-m9q">
@@ -410,14 +410,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRroad" translatesAutoresizingMaskIntoConstraints="NO" id="46e-5s-Y5r">
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRroad" translatesAutoresizingMaskIntoConstraints="NO" id="46e-5s-Y5r">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="NI6-Ng-RRk"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboardThumbnail" id="NI6-Ng-RRk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xK-ZC-s8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,7 +435,7 @@
                     <connections>
                         <segue destination="EiV-HZ-Xnq" kind="relationship" relationship="viewControllers" id="Gbl-DG-lYj"/>
                         <segue destination="evi-W8-S5e" kind="relationship" relationship="viewControllers" id="RYJ-so-HB5"/>
-                        <segue destination="YeL-px-PUa" kind="relationship" relationship="viewControllers" id="auO-wV-v6E"/>
+                        <segue destination="Stb-GH-dki" kind="relationship" relationship="viewControllers" id="auO-wV-v6E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2V-TA-GMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -454,14 +454,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRlandscape" translatesAutoresizingMaskIntoConstraints="NO" id="Cr1-eQ-8EG">
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RRlandscape" translatesAutoresizingMaskIntoConstraints="NO" id="Cr1-eQ-8EG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="CCV-d4-jiD"/>
+                    <tabBarItem key="tabBarItem" title="Queue" image="queueThumbnail" id="CCV-d4-jiD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qC-cT-BgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -605,7 +605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1H6-6Q-Qeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5796" y="-211"/>
+            <point key="canvasLocation" x="6735" y="-214"/>
         </scene>
         <!--Tiger Trap-->
         <scene sceneID="4Vx-xb-myl">
@@ -628,7 +628,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ge-BH-6AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5796" y="1314"/>
+            <point key="canvasLocation" x="6735" y="1354"/>
+        </scene>
+        <!--Parts-->
+        <scene sceneID="zTu-7w-BVf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Stb-GH-dki" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Parts" image="gearsThumbnail" id="Zxn-X2-gTE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vJ0-3m-Hoe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YeL-px-PUa" kind="relationship" relationship="rootViewController" id="QC1-e5-YGi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPM-Pt-J1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4472.8000000000002" y="557.27136431784118"/>
         </scene>
     </scenes>
     <resources>
@@ -637,5 +656,8 @@
         <image name="RRlandscape" width="706" height="540"/>
         <image name="RRroad" width="703" height="532"/>
         <image name="acmeBombGrey" width="288" height="403"/>
+        <image name="dashboardThumbnail" width="60" height="46"/>
+        <image name="gearsThumbnail" width="60" height="47"/>
+        <image name="queueThumbnail" width="50" height="41"/>
     </resources>
 </document>
