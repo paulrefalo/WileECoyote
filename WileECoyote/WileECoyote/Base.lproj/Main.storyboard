@@ -275,7 +275,7 @@
         <!--Bomb-->
         <scene sceneID="gmh-cs-BzC">
             <objects>
-                <viewController title="Acme Bomb" id="tUb-U6-D85" userLabel="Bomb" customClass="AcmeBomb" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AcmeBomb" title="Acme Bomb" id="tUb-U6-D85" userLabel="Bomb" customClass="AcmeBomb" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IqR-TC-5Er"/>
                         <viewControllerLayoutGuide type="bottom" id="ow5-Dr-9wv"/>
@@ -636,7 +636,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Stb-GH-dki" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Parts" image="gearsThumbnail" id="Zxn-X2-gTE"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vJ0-3m-Hoe">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="gearBackButton" backIndicatorTransitionMaskImage="gearBackButton" id="vJ0-3m-Hoe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -657,6 +657,7 @@
         <image name="RRroad" width="703" height="532"/>
         <image name="acmeBombGrey" width="288" height="403"/>
         <image name="dashboardThumbnail" width="60" height="46"/>
+        <image name="gearBackButton" width="25" height="26"/>
         <image name="gearsThumbnail" width="60" height="47"/>
         <image name="queueThumbnail" width="50" height="41"/>
     </resources>

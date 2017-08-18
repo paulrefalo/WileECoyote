@@ -98,10 +98,16 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Section \(indexPath.section), Row : \(indexPath.row)")
-        print(self.sectionTitles[indexPath.section])
         let section = indexPath.section
         let row = indexPath.row
         print(self.sectionData[section]?[row] ?? "Section/Row default")
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
+        
+        let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "AcmeBomb")
+        self.navigationController!.pushViewController(VC1, animated: true)
     }
     
  
@@ -141,14 +147,19 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destinationViewController.
+//        // Pass the selected object to the new view controller.
+//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Cat", style: .plain, target: nil, action: nil)
+//    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+       
     }
-    */
+ 
 
 }
