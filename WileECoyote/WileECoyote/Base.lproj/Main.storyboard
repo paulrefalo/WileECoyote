@@ -291,7 +291,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acmeBombGrey" translatesAutoresizingMaskIntoConstraints="NO" id="P8v-bX-TK2">
                                 <rect key="frame" x="43" y="60" width="288" height="403"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdR-Rm-PJ4" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdR-Rm-PJ4" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                 <rect key="frame" x="99" y="144" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="bLT-9G-Obr"/>
@@ -312,8 +312,11 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="partButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="WHc-5D-cke"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozP-SK-feQ" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozP-SK-feQ" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                 <rect key="frame" x="20" y="409" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KgT-ot-hnM"/>
@@ -334,8 +337,11 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="partButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="zAg-qe-B5F"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9X-v6-zyo" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9X-v6-zyo" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                 <rect key="frame" x="293" y="151" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="DHY-7x-mJG"/>
@@ -356,8 +362,11 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="partButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="baj-sx-adS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8t-iU-QzG" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8t-iU-QzG" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                 <rect key="frame" x="11" y="182" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="TrG-ge-mjy"/>
@@ -378,6 +387,9 @@
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="partButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="9HP-v4-6cb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -393,6 +405,12 @@
                             <constraint firstItem="ozP-SK-feQ" firstAttribute="top" secondItem="P8v-bX-TK2" secondAttribute="bottom" constant="-54" id="w8Y-xu-Tf2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="R8t-iU-QzG" id="0BX-1h-r18"/>
+                        <outlet property="button2" destination="GdR-Rm-PJ4" id="bJ7-5U-GHi"/>
+                        <outlet property="button3" destination="C9X-v6-zyo" id="GVh-eC-00V"/>
+                        <outlet property="button4" destination="ozP-SK-feQ" id="hNo-PU-Vlf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udF-Cc-f7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

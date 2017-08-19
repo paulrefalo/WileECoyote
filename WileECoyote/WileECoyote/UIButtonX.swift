@@ -21,6 +21,7 @@ class UIButtonX: UIButton {
     
     var direction: FromDirection = .Left
     var alphaBefore: CGFloat = 1
+    var name: String = "Button name not assigned yet"
     
     @IBInspectable var animate: Bool = false
     @IBInspectable var animateDelay: Double = 0.2
