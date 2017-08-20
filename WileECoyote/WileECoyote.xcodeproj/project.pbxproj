@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		482BD95D1F489E6F00C56FCF /* SelectedPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95C1F489E6F00C56FCF /* SelectedPart.swift */; };
+		482BD95D1F489E6F00C56FCF /* AssemblyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */; };
+		482BD95F1F496BF400C56FCF /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95E1F496BF400C56FCF /* UILabelX.swift */; };
 		4874B8D01F29AFDD00F47FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */; };
 		4874B8D21F29AFDD00F47FF0 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */; };
 		4874B8D51F29AFDD00F47FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D31F29AFDD00F47FF0 /* Main.storyboard */; };
@@ -32,7 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		482BD95C1F489E6F00C56FCF /* SelectedPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedPart.swift; sourceTree = "<group>"; };
+		482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyPart.swift; sourceTree = "<group>"; };
+		482BD95E1F496BF400C56FCF /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		4874B8CC1F29AFDD00F47FF0 /* WileECoyote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WileECoyote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialVC.swift; path = WileECoyote/InitialVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				4874B8E41F2B05C700F47FF0 /* Antsy_Light.otf */,
 				4874B8DB1F29AFDD00F47FF0 /* Info.plist */,
 				4874B8E11F2B03F200F47FF0 /* UIButtonX.swift */,
+				482BD95E1F496BF400C56FCF /* UILabelX.swift */,
 				4874B8D61F29AFDD00F47FF0 /* Assets.xcassets */,
 				4874B8D81F29AFDD00F47FF0 /* LaunchScreen.storyboard */,
 			);
@@ -122,7 +125,7 @@
 				48869C8A1F41000000923940 /* Model.xcdatamodeld */,
 				48869CB21F417A0900923940 /* CoreDataStack.swift */,
 				48869CB91F42097A00923940 /* acmeParts.json */,
-				482BD95C1F489E6F00C56FCF /* SelectedPart.swift */,
+				482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -222,7 +225,8 @@
 				48869C871F40FEA100923940 /* AssemblyTableViewController.swift in Sources */,
 				48869CAF1F410CC500923940 /* ServiceBulletin+CoreDataProperties.swift in Sources */,
 				48869CB81F4201DE00923940 /* Part+CoreDataProperties.swift in Sources */,
-				482BD95D1F489E6F00C56FCF /* SelectedPart.swift in Sources */,
+				482BD95F1F496BF400C56FCF /* UILabelX.swift in Sources */,
+				482BD95D1F489E6F00C56FCF /* AssemblyPart.swift in Sources */,
 				48BB0C681F2EBB9000B2ED1F /* partsTabVC.swift in Sources */,
 				489FA6D61F3583C9004D02FC /* RocketSledVC.swift in Sources */,
 				48869CAE1F410CC500923940 /* ServiceBulletin+CoreDataClass.swift in Sources */,

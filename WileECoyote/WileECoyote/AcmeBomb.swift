@@ -24,7 +24,16 @@ class AcmeBomb: UIViewController {
     
     var selectedPartNumber = String()
     
-
+    var fetchedParts = [AssemblyPart]()
+    var selectedPart = AssemblyPart()
+    
+    @IBOutlet weak var warningImageSB: UIImageView!
+    
+    @IBOutlet weak var partDescription: UILabelX!
+    @IBOutlet weak var price: UILabelX!
+    @IBOutlet weak var partNumber: UILabelX!
+    @IBOutlet weak var referenceDocuments: UILabelX!
+    @IBOutlet weak var addToOrder: UIButtonX!
     
     
     override func viewDidLoad() {
@@ -47,6 +56,7 @@ class AcmeBomb: UIViewController {
         buttonsArray.append(button3)
         buttonsArray.append(button4)
 
+        // From .tag assign custom .name button property
         for button in buttonsArray {
             switch button.tag {
             case 1:
@@ -62,8 +72,37 @@ class AcmeBomb: UIViewController {
                 return
             }
             
+            fetchPartAndStore(number: button.name, button: button)
+        }
+        
+    }
+    
+    func fetchPartAndStore(number: String, button: UIButtonX) {
+        // Use core data to retrieve unique Part entity with custom button name property
+        // Once retrieved, store part as in fetchedParts struct array
+        do {
+            let fetchRequest = NSFetchRequest<Part>(entityName: "Part")
+            fetchRequest.predicate = NSPredicate(format: "partNumber == %@", number)
+            let fetchedResults = try moc?.fetch(fetchRequest)
+            print(fetchedResults ?? "No fetched results available")
+            if fetchedResults?.count == 1 {
+                print("Unique part number found!")
+                let fetchedPart = fetchedResults?.first
 
-
+                let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!, initSB: fetchedPart?.partSB)
+                
+                if thisPart.serviceBulletin == true {
+                    // set alpha on Service Bulletin label to 1.0
+                    warningImageSB.alpha = 1
+                    // change button border color to red
+                    button.borderColor = UIColor.red
+                }
+                
+                fetchedParts.append(thisPart)
+            }
+        }
+        catch {
+            print ("fetch task failed", error)
         }
     }
     
@@ -72,27 +111,28 @@ class AcmeBomb: UIViewController {
             return
         }
         
-        print("Button pressed: \(button.name)")
-//        
-//        let fetchRequest = NSFetchRequest<Part>(entityName: "Part")
-//        fetchRequest.predicate = NSPredicate(format: "partNumber == %@", button.name)
-        
-        do {
-            let fetchRequest = NSFetchRequest<Part>(entityName: "Part")
-            fetchRequest.predicate = NSPredicate(format: "partNumber == %@", button.name)
-            let fetchedResults = try moc?.fetch(fetchRequest)
-            print(fetchedResults ?? "No fetched results available")
-            if fetchedResults?.count == 1 {
-                print("Unique part number found!")
-                let fetchedPart = fetchedResults?.first
-                print(fetchedPart?.partDescription)
-                dump(fetchedPart)
+        // Loop through fetchedParts array to find which
+        for part in fetchedParts {
+            if part.number == button.name {
+                selectedPart = part
             }
-            
         }
-        catch {
-            print ("fetch task failed", error)
+        
+        // TODO: configure button UI for toggle
+        for btn in buttonsArray {
+            btn.backgroundColor = UIColor.clear
+            btn.setTitleColor(UIColor.white, for: UIControlState.normal)
         }
+        
+        button.backgroundColor = UIColor.white
+        button.setTitleColor(UIColor.blue, for: UIControlState.normal)
+        
+        
+        // set bottom label text fields
+        partDescription.text = selectedPart.description
+        price.text = "$ \(selectedPart.priceUSD)"
+        partNumber.text = selectedPart.number
+        referenceDocuments.text = "Ref:"
         
     }
     
