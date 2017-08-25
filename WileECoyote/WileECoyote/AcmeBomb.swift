@@ -92,8 +92,6 @@ class AcmeBomb: UIViewController {
                 let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!, initSB: fetchedPart?.partSB)
                 
                 if thisPart.serviceBulletin == true {
-                    // set alpha on Service Bulletin label to 1.0
-                    warningImageSB.alpha = 1
                     // change button border color to red
                     button.borderColor = UIColor.red
                 }

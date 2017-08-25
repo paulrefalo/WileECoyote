@@ -27,7 +27,7 @@ class UILabelX: UILabel {
         intrinsicSuperViewContentSize.width += leftInset + rightInset
         return intrinsicSuperViewContentSize
     }
-    
+
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             self.layer.cornerRadius = cornerRadius

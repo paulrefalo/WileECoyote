@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WileECoyote/AcmeBomb.swift"
-            timestampString = "524911720.592383"
+            timestampString = "524935822.022982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "partButtonPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
