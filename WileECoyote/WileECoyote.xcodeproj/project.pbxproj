@@ -10,6 +10,7 @@
 		482BD95D1F489E6F00C56FCF /* AssemblyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */; };
 		482BD95F1F496BF400C56FCF /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95E1F496BF400C56FCF /* UILabelX.swift */; };
 		482BD9611F4FACC900C56FCF /* DocumentsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */; };
+		482BD9641F5134E500C56FCF /* PR Resume Simple 2017.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 482BD9631F5134E500C56FCF /* PR Resume Simple 2017.pdf */; };
 		4874B8D01F29AFDD00F47FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */; };
 		4874B8D21F29AFDD00F47FF0 /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */; };
 		4874B8D51F29AFDD00F47FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4874B8D31F29AFDD00F47FF0 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyPart.swift; sourceTree = "<group>"; };
 		482BD95E1F496BF400C56FCF /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsDetailVC.swift; sourceTree = "<group>"; };
+		482BD9631F5134E500C56FCF /* PR Resume Simple 2017.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PR Resume Simple 2017.pdf"; sourceTree = "<group>"; };
 		4874B8CC1F29AFDD00F47FF0 /* WileECoyote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WileECoyote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4874B8CF1F29AFDD00F47FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InitialVC.swift; path = WileECoyote/InitialVC.swift; sourceTree = "<group>"; };
@@ -74,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		482BD9621F512B6400C56FCF /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				482BD9631F5134E500C56FCF /* PR Resume Simple 2017.pdf */,
+			);
+			name = PDFs;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		4874B8C31F29AFDC00F47FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +108,7 @@
 				4874B8D31F29AFDD00F47FF0 /* Main.storyboard */,
 				48869CB41F417EBE00923940 /* ViewControllers */,
 				48869C991F4109C400923940 /* Model */,
+				482BD9621F512B6400C56FCF /* PDFs */,
 				4874B8E31F2B042F00F47FF0 /* Resources */,
 			);
 			path = WileECoyote;
@@ -210,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4874B8DA1F29AFDD00F47FF0 /* LaunchScreen.storyboard in Resources */,
+				482BD9641F5134E500C56FCF /* PR Resume Simple 2017.pdf in Resources */,
 				4874B8D71F29AFDD00F47FF0 /* Assets.xcassets in Resources */,
 				48869CBA1F42097A00923940 /* acmeParts.json in Resources */,
 				4874B8D51F29AFDD00F47FF0 /* Main.storyboard in Resources */,

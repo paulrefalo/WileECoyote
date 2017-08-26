@@ -35,6 +35,7 @@ class AcmeBomb: UIViewController {
     @IBOutlet weak var referenceDocuments: UILabelX!
     @IBOutlet weak var addToOrder: UIButtonX!
     
+    let pdfTitle = "PR Resume Simple 2017"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,7 +85,7 @@ class AcmeBomb: UIViewController {
             let fetchRequest = NSFetchRequest<Part>(entityName: "Part")
             fetchRequest.predicate = NSPredicate(format: "partNumber == %@", number)
             let fetchedResults = try moc?.fetch(fetchRequest)
-            print(fetchedResults ?? "No fetched results available")
+//            print(fetchedResults ?? "No fetched results available")
             if fetchedResults?.count == 1 {
                 print("Unique part number found!")
                 let fetchedPart = fetchedResults?.first
@@ -134,6 +135,19 @@ class AcmeBomb: UIViewController {
         
     }
     
-
+    @IBAction func pdfButtonPressed(_ sender: Any) {
+        
+        if let url = Bundle.main.url(forResource: pdfTitle, withExtension: "pdf") {
+            let webView = UIWebView(frame: self.view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest as URLRequest)
+            
+            let pdfVC = UIViewController()
+            pdfVC.view.addSubview(webView)
+            pdfVC.title = pdfTitle
+            self.navigationController?.pushViewController(pdfVC, animated: true)
+            
+        }
+    }
     
 }
