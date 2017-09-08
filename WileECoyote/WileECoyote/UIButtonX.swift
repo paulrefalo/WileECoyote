@@ -93,4 +93,12 @@ class UIButtonX: UIButton {
             self.layer.borderColor = borderColor.cgColor
         }
     }
+    
+    @IBInspectable var hideButton: Bool = false {
+        didSet {
+            self.isHidden = hideButton
+            self.isEnabled = hideButton
+        }
+
+    }
 }
