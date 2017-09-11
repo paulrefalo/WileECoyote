@@ -16,7 +16,8 @@ struct AssemblyPart {
     var serviceBulletin: Bool
     var vendor: String?
     var priceUSD: Int16
-    var partSB: NSSet?
+//    var partSB: NSSet?
+//    var partSB: String?
     
     init() {
         description = ""
@@ -25,17 +26,19 @@ struct AssemblyPart {
         serviceBulletin = false
         vendor = ""
         priceUSD = 0
-        partSB = NSSet()
+//        partSB = NSSet()
+//        partSB = ""
     }
     
     init(initDescription: String?, initNumber: String?, initQuantity: Int16, initServiceBulletin: Bool,
-         initVendor: String?, initPriceUSD: Int16, initSB: NSSet?) {
+         initVendor: String?, initPriceUSD: Int16) { // was initSB: NSSet?
         description = initDescription ?? ""
         number = initNumber ?? ""
         quantity = initQuantity 
         serviceBulletin = initServiceBulletin 
         priceUSD = initPriceUSD 
-        partSB = initSB ?? NSSet()
+//        partSB = initSB ?? NSSet()
+//        partSB = initSB ?? "Empty docs set"
     }
 
 }

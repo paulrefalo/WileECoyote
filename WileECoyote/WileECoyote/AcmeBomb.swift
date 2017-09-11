@@ -90,7 +90,8 @@ class AcmeBomb: UIViewController {
                 print("Unique part number found!")
                 let fetchedPart = fetchedResults?.first
 
-                let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!, initSB: fetchedPart?.partSB)
+                let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!) // removed initSB: fetchedPart?.partSB
+                
                 
                 if thisPart.serviceBulletin == true {
                     // change button border color to red

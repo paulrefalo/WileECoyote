@@ -257,6 +257,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Qew-8t-bHg"/>
                                     <constraint firstAttribute="width" constant="40" id="ZAc-G3-age"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -267,7 +268,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pdfButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="xCN-jK-wUZ"/>
@@ -279,6 +280,7 @@
                                     <constraint firstAttribute="width" constant="40" id="HWb-Ua-c5v"/>
                                     <constraint firstAttribute="height" constant="30" id="yei-4K-5u6"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -301,6 +303,7 @@
                                     <constraint firstAttribute="width" constant="40" id="E2c-2G-EAf"/>
                                     <constraint firstAttribute="height" constant="30" id="Fg3-aL-V9T"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -323,6 +326,7 @@
                                     <constraint firstAttribute="width" constant="40" id="4a5-70-Fl0"/>
                                     <constraint firstAttribute="height" constant="30" id="tHr-Lg-ZRQ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>

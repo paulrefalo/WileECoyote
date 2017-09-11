@@ -94,11 +94,11 @@ class UIButtonX: UIButton {
         }
     }
     
-    @IBInspectable var hideButton: Bool = false {
-        didSet {
-            self.isHidden = hideButton
-            self.isEnabled = hideButton
-        }
-
-    }
+//    @IBInspectable var hideButton: Bool = false { // this doesn't work
+//        didSet {
+//            self.isHidden = hideButton
+//            self.isEnabled = hideButton
+//        }
+//
+//    }
 }
