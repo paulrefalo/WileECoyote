@@ -13,6 +13,7 @@
     </entity>
     <entity name="Part" representedClassName=".Part" syncable="YES">
         <attribute name="partDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="partDocs" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="partNumber" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="partPriceUSD" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="partQuantity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -28,7 +29,7 @@
     </entity>
     <elements>
         <element name="Order" positionX="-369" positionY="-135" width="128" height="180"/>
-        <element name="Part" positionX="-54" positionY="-9" width="128" height="165"/>
+        <element name="Part" positionX="-54" positionY="-9" width="128" height="180"/>
         <element name="ServiceBulletin" positionX="106" positionY="180" width="128" height="90"/>
     </elements>
 </model>

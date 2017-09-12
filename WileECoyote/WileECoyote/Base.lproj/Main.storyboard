@@ -216,7 +216,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ref:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0v-jr-bMs" userLabel="Reference" customClass="UILabelX" customModule="WileECoyote" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Docs:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0v-jr-bMs" userLabel="Reference" customClass="UILabelX" customModule="WileECoyote" customModuleProvider="target">
                                 <rect key="frame" x="20" y="563" width="285" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="dUi-Ni-Fw1"/>
@@ -252,12 +252,12 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIO-ms-Ik5" userLabel="PDF1" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="68" y="568" width="40" height="30"/>
+                                <rect key="frame" x="75" y="568" width="40" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Qew-8t-bHg"/>
                                     <constraint firstAttribute="width" constant="40" id="ZAc-G3-age"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -268,19 +268,18 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideButton" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pdfButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="xCN-jK-wUZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-hv-H2K" userLabel="PDF3" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="122" y="568" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-ed-kvs" userLabel="PDF2" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                <rect key="frame" x="125" y="568" width="40" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="HWb-Ua-c5v"/>
-                                    <constraint firstAttribute="height" constant="30" id="yei-4K-5u6"/>
+                                    <constraint firstAttribute="width" constant="40" id="4a5-70-Fl0"/>
+                                    <constraint firstAttribute="height" constant="30" id="tHr-Lg-ZRQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -291,19 +290,40 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideButton" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pdfButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="Psg-KQ-SC5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-hv-H2K" userLabel="PDF3" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
+                                <rect key="frame" x="175" y="568" width="40" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HWb-Ua-c5v"/>
+                                    <constraint firstAttribute="height" constant="30" id="yei-4K-5u6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="PDF">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pdfButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="DNU-u7-wug"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sc1-XX-5qC" userLabel="PDF4" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="176" y="568" width="40" height="30"/>
+                                <rect key="frame" x="225" y="568" width="40" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="E2c-2G-EAf"/>
                                     <constraint firstAttribute="height" constant="30" id="Fg3-aL-V9T"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <state key="normal" title="PDF">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -314,57 +334,33 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideButton" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pdfButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="zqJ-s5-3yC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-ed-kvs" userLabel="PDF2" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="230" y="568" width="40" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="4a5-70-Fl0"/>
-                                    <constraint firstAttribute="height" constant="30" id="tHr-Lg-ZRQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="PDF">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideButton" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pdfButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="Psg-KQ-SC5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="beq-VX-5Aj" firstAttribute="leading" secondItem="E0v-jr-bMs" secondAttribute="trailing" constant="4" id="2YC-Rg-NfP"/>
                             <constraint firstItem="WyU-r1-B6o" firstAttribute="height" secondItem="qDE-JK-HwY" secondAttribute="height" id="3wk-kD-xcJ"/>
+                            <constraint firstItem="Sc1-XX-5qC" firstAttribute="trailing" secondItem="g9s-hv-H2K" secondAttribute="trailing" constant="50" id="4fd-i3-VJ8"/>
                             <constraint firstItem="sIO-ms-Ik5" firstAttribute="centerY" secondItem="E0v-jr-bMs" secondAttribute="centerY" id="5L0-34-gUg"/>
                             <constraint firstItem="qDE-JK-HwY" firstAttribute="leading" secondItem="P8v-bX-TK2" secondAttribute="leading" constant="-23" id="74j-fg-0km"/>
                             <constraint firstItem="P8v-bX-TK2" firstAttribute="top" secondItem="C9X-v6-zyo" secondAttribute="bottom" constant="-121" id="9dB-Wd-Db1"/>
                             <constraint firstItem="P8v-bX-TK2" firstAttribute="leading" secondItem="C9X-v6-zyo" secondAttribute="trailing" constant="-280" id="DvE-VU-cvl"/>
                             <constraint firstItem="Sc1-XX-5qC" firstAttribute="centerY" secondItem="sIO-ms-Ik5" secondAttribute="centerY" id="EMS-A8-6Ub"/>
+                            <constraint firstItem="g9s-hv-H2K" firstAttribute="trailing" secondItem="xyD-ed-kvs" secondAttribute="trailing" constant="50" id="H7L-27-vpz"/>
+                            <constraint firstItem="xyD-ed-kvs" firstAttribute="trailing" secondItem="sIO-ms-Ik5" secondAttribute="trailing" constant="50" id="HNV-fK-O1R"/>
                             <constraint firstItem="WyU-r1-B6o" firstAttribute="trailing" secondItem="qDE-JK-HwY" secondAttribute="trailing" constant="89" id="Hyd-4O-lhg"/>
                             <constraint firstItem="beq-VX-5Aj" firstAttribute="height" secondItem="E0v-jr-bMs" secondAttribute="height" id="KDp-Hg-GrK"/>
                             <constraint firstItem="3VT-XV-dah" firstAttribute="top" secondItem="P8v-bX-TK2" secondAttribute="top" id="Lat-a6-cU4"/>
-                            <constraint firstItem="g9s-hv-H2K" firstAttribute="leading" secondItem="sIO-ms-Ik5" secondAttribute="trailing" constant="14" id="NDJ-rZ-UlG"/>
                             <constraint firstItem="9Aq-IF-FSu" firstAttribute="top" secondItem="qDE-JK-HwY" secondAttribute="bottom" constant="3" id="OFH-VD-Nm2"/>
                             <constraint firstItem="g9s-hv-H2K" firstAttribute="centerY" secondItem="sIO-ms-Ik5" secondAttribute="centerY" id="OLO-H7-r4b"/>
                             <constraint firstItem="R8t-iU-QzG" firstAttribute="leading" secondItem="P8v-bX-TK2" secondAttribute="trailing" constant="-320" id="Rgb-Wb-bag"/>
                             <constraint firstItem="R8t-iU-QzG" firstAttribute="top" secondItem="P8v-bX-TK2" secondAttribute="bottom" constant="-281" id="T8f-43-xPb"/>
-                            <constraint firstItem="Sc1-XX-5qC" firstAttribute="leading" secondItem="g9s-hv-H2K" secondAttribute="trailing" constant="14" id="TFg-Ni-OeJ"/>
                             <constraint firstItem="WyU-r1-B6o" firstAttribute="centerY" secondItem="qDE-JK-HwY" secondAttribute="centerY" id="TRP-a6-9Af"/>
                             <constraint firstItem="3VT-XV-dah" firstAttribute="trailing" secondItem="P8v-bX-TK2" secondAttribute="trailing" id="XCF-Sj-YEf"/>
                             <constraint firstItem="GdR-Rm-PJ4" firstAttribute="leading" secondItem="P8v-bX-TK2" secondAttribute="trailing" constant="-232" id="XzA-Iq-FGH"/>
-                            <constraint firstItem="xyD-ed-kvs" firstAttribute="leading" secondItem="Sc1-XX-5qC" secondAttribute="trailing" constant="14" id="Yzr-P1-Iym"/>
                             <constraint firstItem="P8v-bX-TK2" firstAttribute="top" secondItem="IqR-TC-5Er" secondAttribute="bottom" constant="40" id="aoK-v9-1eI"/>
                             <constraint firstItem="sIO-ms-Ik5" firstAttribute="top" secondItem="E0v-jr-bMs" secondAttribute="top" constant="5" id="coV-EM-Mvz"/>
                             <constraint firstItem="P8v-bX-TK2" firstAttribute="top" secondItem="GdR-Rm-PJ4" secondAttribute="bottom" constant="-114" id="gLJ-2p-87k"/>
@@ -377,7 +373,7 @@
                             <constraint firstItem="P8v-bX-TK2" firstAttribute="centerX" secondItem="GAj-Hf-uch" secondAttribute="centerX" id="uuM-Di-shL"/>
                             <constraint firstItem="ozP-SK-feQ" firstAttribute="top" secondItem="P8v-bX-TK2" secondAttribute="bottom" constant="-54" id="w8Y-xu-Tf2"/>
                             <constraint firstItem="beq-VX-5Aj" firstAttribute="top" secondItem="WyU-r1-B6o" secondAttribute="bottom" constant="44" id="wkU-MX-Zrx"/>
-                            <constraint firstItem="sIO-ms-Ik5" firstAttribute="leading" secondItem="E0v-jr-bMs" secondAttribute="leading" constant="48" id="yRu-N6-X0K"/>
+                            <constraint firstItem="sIO-ms-Ik5" firstAttribute="leading" secondItem="E0v-jr-bMs" secondAttribute="leading" constant="55" id="yRu-N6-X0K"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2lD-hh-qIX"/>
@@ -387,6 +383,10 @@
                         <outlet property="button2" destination="GdR-Rm-PJ4" id="bJ7-5U-GHi"/>
                         <outlet property="button3" destination="C9X-v6-zyo" id="GVh-eC-00V"/>
                         <outlet property="button4" destination="ozP-SK-feQ" id="hNo-PU-Vlf"/>
+                        <outlet property="docButton1" destination="sIO-ms-Ik5" id="Qqo-dj-CpJ"/>
+                        <outlet property="docButton2" destination="xyD-ed-kvs" id="h3Z-KE-TQf"/>
+                        <outlet property="docButton3" destination="g9s-hv-H2K" id="6bx-0d-YRa"/>
+                        <outlet property="docButton4" destination="Sc1-XX-5qC" id="Lce-X7-29c"/>
                         <outlet property="partDescription" destination="qDE-JK-HwY" id="ShV-3U-JoB"/>
                         <outlet property="partNumber" destination="9Aq-IF-FSu" id="wGN-ie-YYi"/>
                         <outlet property="price" destination="WyU-r1-B6o" id="9yt-mx-xnv"/>
@@ -467,169 +467,6 @@
             </objects>
             <point key="canvasLocation" x="3492" y="911"/>
         </scene>
-        <!--Rocket Sled-->
-        <scene sceneID="fx2-JW-mE2">
-            <objects>
-                <viewController title="Rocket Sled" id="mkg-J3-gCk" userLabel="Rocket Sled" customClass="rocketSledVC" customModule="WileECoyote" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="all-4S-nHs"/>
-                        <viewControllerLayoutGuide type="bottom" id="RLg-FK-2CG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aw4-7I-Cih">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AcmeRocketSled" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-UI-8Og">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5m0-rw-zPl" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="263" y="169" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="B">
-                                    <color key="titleColor" red="0.7824940681" green="0.87776583429999999" blue="0.92551767829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="partButtonPressed:" destination="mkg-J3-gCk" eventType="touchUpInside" id="l42-tP-Z03"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6W-eZ-wNW" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="98" y="221" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="D">
-                                    <color key="titleColor" red="0.7824940681" green="0.87776583429999999" blue="0.92551767829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUT-KM-C2G" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="190" y="510" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="G">
-                                    <color key="titleColor" red="0.7824940681" green="0.87776583429999999" blue="0.92551767829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho0-8T-Vug" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="263" y="256" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="A">
-                                    <color key="titleColor" red="0.7824940681" green="0.87776583429999999" blue="0.92551767829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="partButtonPressed:" destination="mkg-J3-gCk" eventType="touchUpInside" id="tiz-zX-FsG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8x-hL-W88" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="122" y="120" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="F">
-                                    <color key="titleColor" red="0.7824940681" green="0.87776583429999999" blue="0.92551767829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4U-35-bEy" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="180" y="120" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="C">
-                                    <color key="titleColor" red="0.7824940681" green="0.87776583429999999" blue="0.92551767829999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="partButtonPressed:" destination="mkg-J3-gCk" eventType="touchUpInside" id="YZz-Be-89g"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I45-v9-qDm" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
-                                <rect key="frame" x="37" y="507" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="E">
-                                    <color key="titleColor" red="0.78249406814575195" green="0.87776583433151245" blue="0.92551767826080322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.59999999999999998" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="r5h-UI-8Og" secondAttribute="trailing" id="X3D-Gs-Pji"/>
-                            <constraint firstItem="RLg-FK-2CG" firstAttribute="top" secondItem="r5h-UI-8Og" secondAttribute="bottom" id="YUN-Le-u0b"/>
-                            <constraint firstItem="r5h-UI-8Og" firstAttribute="leading" secondItem="aw4-7I-Cih" secondAttribute="leading" id="iAC-Em-NY2"/>
-                            <constraint firstItem="r5h-UI-8Og" firstAttribute="top" secondItem="all-4S-nHs" secondAttribute="bottom" id="rpe-cC-Fse"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="buttonA" destination="ho0-8T-Vug" id="n2V-ZG-YTM"/>
-                        <outlet property="buttonB" destination="5m0-rw-zPl" id="bH3-5V-re1"/>
-                        <outlet property="buttonC" destination="X4U-35-bEy" id="di6-6d-TQA"/>
-                        <outlet property="buttonD" destination="o6W-eZ-wNW" id="OSf-X5-CBh"/>
-                        <outlet property="buttonE" destination="I45-v9-qDm" id="AZq-Gr-wv3"/>
-                        <outlet property="buttonF" destination="V8x-hL-W88" id="Mmk-yA-9hZ"/>
-                        <outlet property="buttonG" destination="sUT-KM-C2G" id="zQE-8f-RsB"/>
-                        <outlet property="imageView" destination="r5h-UI-8Og" id="NmY-Ph-BpY"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1H6-6Q-Qeb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6735" y="-214"/>
-        </scene>
-        <!--Tiger Trap-->
-        <scene sceneID="4Vx-xb-myl">
-            <objects>
-                <viewController title="Burmese Tiger Trap" id="wIC-3a-Hu1" userLabel="Tiger Trap" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wFu-hp-3AJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="FUa-e7-0Po"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="S8M-rS-fEt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueprintLight" translatesAutoresizingMaskIntoConstraints="NO" id="Bqs-z1-ne3">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4ge-BH-6AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6735" y="1354"/>
-        </scene>
         <!--Parts-->
         <scene sceneID="zTu-7w-BVf">
             <objects>
@@ -651,7 +488,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AcmeRocketSled" width="339" height="460"/>
         <image name="BlueprintLight" width="1024" height="1024"/>
         <image name="RRlandscape" width="706" height="540"/>
         <image name="RRroad" width="703" height="532"/>

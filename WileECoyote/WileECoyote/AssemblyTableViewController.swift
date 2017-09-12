@@ -105,9 +105,12 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
-        
-        let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "AcmeBomb")
-        self.navigationController!.pushViewController(VC1, animated: true)
+        if self.sectionData[section]?[row] == "Spherical Bomb" {
+            let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "AcmeBomb")
+            self.navigationController!.pushViewController(VC1, animated: true)
+        } else {
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
  

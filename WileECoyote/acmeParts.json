@@ -5,7 +5,8 @@
    "partPriceUSD": 115,
    "partQuantity": 0,
    "partVendor": "Acme",
-   "partServiceBulletin": false
+   "partServiceBulletin": false,
+   "partDocs": "SM221,SM670"
  },
  {
    "partNumber": "58-2662-42",
@@ -13,7 +14,8 @@
    "partPriceUSD": 85,
    "partQuantity": 0,
    "partVendor": "Acme",
-   "partServiceBulletin": false
+   "partServiceBulletin": false,
+   "partDocs": "SM133,PM15"
  },
  {
    "partNumber": "58-2662-43",
@@ -21,7 +23,8 @@
    "partPriceUSD": 35,
    "partQuantity": 0,
    "partVendor": "Acme",
-   "partServiceBulletin": true
+   "partServiceBulletin": true,
+   "partDocs": "SB333,SM675,PM87"
  },
  {
    "partNumber": "58-2662-44",
@@ -29,6 +32,7 @@
    "partPriceUSD": 1500,
    "partQuantity": 0,
    "partVendor": "Acme",
-   "partServiceBulletin": false
+   "partServiceBulletin": false,
+   "partDocs": "SM501,SM616,PM12"
  }
 ]

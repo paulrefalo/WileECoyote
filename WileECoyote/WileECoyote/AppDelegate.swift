@@ -115,6 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let partQuantity = partsDictionary["partQuantity"] as? Int16 ?? 0
             let partVendor = partsDictionary["partVendor"] as? String ?? ""
             let partServiceBulletin = partsDictionary["partServiceBulletin"] as? Bool ?? false
+            let partDocs = partsDictionary["partDocs"] as? String ?? ""
 
             let part = Part.part(withName: partNumber, in: coreDataStack.managedObjectContext)
             
@@ -124,6 +125,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             part.partQuantity = partQuantity
             part.partVendor = partVendor
             part.partServiceBulletin = partServiceBulletin
+            part.partDocs = partDocs
             
         }
         

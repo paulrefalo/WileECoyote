@@ -24,6 +24,12 @@ class AcmeBomb: UIViewController {
     
     var selectedPartNumber = String()
     
+    @IBOutlet weak var docButton1: UIButtonX!
+    @IBOutlet weak var docButton2: UIButtonX!
+    @IBOutlet weak var docButton3: UIButtonX!
+    @IBOutlet weak var docButton4: UIButtonX!
+    var docsButtonsArray = [UIButtonX]()
+    
     var fetchedParts = [AssemblyPart]()
     var selectedPart = AssemblyPart()
     
@@ -59,6 +65,7 @@ class AcmeBomb: UIViewController {
 
         // From .tag assign custom .name button property
         for button in buttonsArray {
+            
             switch button.tag {
             case 1:
                 button.name = "58-2662-41"
@@ -76,7 +83,17 @@ class AcmeBomb: UIViewController {
             fetchPartAndStore(number: button.name, button: button)
         }
         
+        docsButtonsArray.append(docButton1)
+        docsButtonsArray.append(docButton2)
+        docsButtonsArray.append(docButton3)
+        docsButtonsArray.append(docButton4)
+        
+        for button in docsButtonsArray {
+            button.isHidden = true
+        }
+        
     }
+    
     
     func fetchPartAndStore(number: String, button: UIButtonX) {
         // Use core data to retrieve unique Part entity with custom button name property
@@ -90,7 +107,7 @@ class AcmeBomb: UIViewController {
                 print("Unique part number found!")
                 let fetchedPart = fetchedResults?.first
 
-                let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!) // removed initSB: fetchedPart?.partSB
+                let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!, initPartDocs: (fetchedPart?.partDocs)!) // removed initSB: fetchedPart?.partSB
                 
                 
                 if thisPart.serviceBulletin == true {
@@ -118,7 +135,6 @@ class AcmeBomb: UIViewController {
             }
         }
         
-        // TODO: configure button UI for toggle
         for btn in buttonsArray {
             btn.backgroundColor = UIColor.clear
             btn.setTitleColor(UIColor.white, for: UIControlState.normal)
@@ -132,7 +148,27 @@ class AcmeBomb: UIViewController {
         partDescription.text = selectedPart.description
         price.text = "$ \(selectedPart.priceUSD)"
         partNumber.text = selectedPart.number
-        referenceDocuments.text = "Ref:"
+        referenceDocuments.text = "Docs:"
+        
+        for button in docsButtonsArray {    // reset and hide docs buttons when new button is selected
+            button.isHidden = true
+        }
+        
+        if selectedPart.partDocs != nil && selectedPart.partDocs != "" {
+            if let docsArray = selectedPart.partDocs?.components(separatedBy: ",") {
+                var i = 0
+                for doc in docsArray {
+                    if doc.matches("^SB") {
+                        docsButtonsArray[i].borderColor = UIColor.red
+                    } else {
+                        docsButtonsArray[i].borderColor = UIColor.white
+                    }
+                    docsButtonsArray[i].setTitle(doc, for: .normal)
+                    docsButtonsArray[i].isHidden = false
+                    i = i + 1
+                }
+            }
+        }
         
     }
     
@@ -145,10 +181,19 @@ class AcmeBomb: UIViewController {
             
             let pdfVC = UIViewController()
             pdfVC.view.addSubview(webView)
+            
+            pdfVC.edgesForExtendedLayout = [] // This ensures your view is below the navigation bar
+
             pdfVC.title = pdfTitle
             self.navigationController?.pushViewController(pdfVC, animated: true)
             
         }
     }
     
+}
+
+extension String {
+    func matches(_ regex: String) -> Bool {
+        return self.range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
+    }
 }

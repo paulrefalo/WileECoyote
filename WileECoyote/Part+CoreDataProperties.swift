@@ -24,6 +24,8 @@ extension Part {
     @NSManaged public var partPriceUSD: Int16
     @NSManaged public var partSB: NSSet?
     @NSManaged public var uniqueOrder: Order?
+    @NSManaged public var partDocs: String?
+
 
 }
 
