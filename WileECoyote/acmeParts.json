@@ -34,5 +34,50 @@
    "partVendor": "Acme",
    "partServiceBulletin": false,
    "partDocs": "SM501,SM616,PM12"
+ },
+ {
+ "partNumber": "48-2662-41",
+ "partDescription": "Spring Trap Assembly",
+ "partPriceUSD": 3500,
+ "partQuantity": 0,
+ "partVendor": "Acme",
+ "partServiceBulletin": false,
+ "partDocs": "SM409,SM599,PM120"
+ },
+ {
+ "partNumber": "48-2662-42",
+ "partDescription": "Wheel Set",
+ "partPriceUSD": 500,
+ "partQuantity": 0,
+ "partVendor": "Acme",
+ "partServiceBulletin": false,
+ "partDocs": "SM50,SM16,PM01,PM221"
+ },
+ {
+ "partNumber": "48-2662-43",
+ "partDescription": "Axle and Spring Assembly",
+ "partPriceUSD": 400,
+ "partQuantity": 0,
+ "partVendor": "Acme",
+ "partServiceBulletin": true,
+ "partDocs": "SB501,SM616,PM12"
+ },
+ {
+ "partNumber": "48-2662-44",
+ "partDescription": "Bird Seed",
+ "partPriceUSD": 40,
+ "partQuantity": 0,
+ "partVendor": "Acme",
+ "partServiceBulletin": false,
+ "partDocs": "SM505,SM610,PM18"
+ },
+ {
+ "partNumber": "48-2662-45",
+ "partDescription": "Actuator",
+ "partPriceUSD": 399,
+ "partQuantity": 0,
+ "partVendor": "Acme",
+ "partServiceBulletin": false,
+ "partDocs": "SM501,PM42"
  }
 ]

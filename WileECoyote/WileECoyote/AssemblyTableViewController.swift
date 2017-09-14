@@ -19,7 +19,7 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
     let sectionImages: [UIImage] = [#imageLiteral(resourceName: "instrumentsThumbnail"), #imageLiteral(resourceName: "acmeThumbnail"), #imageLiteral(resourceName: "documentsThumbnail"), #imageLiteral(resourceName: "solutionsThumbnail")]
     
     let s1Data: [String] = ["Legacy", "Blueline", "Ancillary Equpment"]
-    let s2Data: [String] = ["Spherical Bomb", "Magnetic Trap"]
+    let s2Data: [String] = ["Spherical Bomb", "Spring Trap"]
     let s3Data: [String] = ["Service Manual 8000", "Tuning Guide 17"]
     let s4Data: [String] = ["Dihydrogen Monoxide", "PPG Solution", "Ethanol"]
 
@@ -107,6 +107,9 @@ class AssemblyTableViewController: UITableViewController, UITextFieldDelegate {
         navigationItem.backBarButtonItem = backItem // This will show in the next view controller being pushed
         if self.sectionData[section]?[row] == "Spherical Bomb" {
             let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "AcmeBomb")
+            self.navigationController!.pushViewController(VC1, animated: true)
+        } else if self.sectionData[section]?[row] == "Spring Trap" {
+            let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "AcmeSpringTrap")
             self.navigationController!.pushViewController(VC1, animated: true)
         } else {
             tableView.deselectRow(at: indexPath, animated: true)

@@ -1,15 +1,15 @@
 //
-//  AcmeBomb.swift
+//  SpringTrap.swift
 //  WileECoyote
 //
-//  Created by Paul ReFalo on 8/8/17.
+//  Created by Paul ReFalo on 9/13/17.
 //  Copyright © 2017 QSS. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-class AcmeBomb: UIViewController {
+class SpringTrapVC: UIViewController {
     
     // MARK: - Properties
     
@@ -20,6 +20,8 @@ class AcmeBomb: UIViewController {
     @IBOutlet weak var button2: UIButtonX!
     @IBOutlet weak var button3: UIButtonX!
     @IBOutlet weak var button4: UIButtonX!
+    @IBOutlet weak var button5: UIButtonX!
+    
     var buttonsArray = [UIButtonX]()
     
     var selectedPartNumber = String()
@@ -28,14 +30,11 @@ class AcmeBomb: UIViewController {
     @IBOutlet weak var docButton2: UIButtonX!
     @IBOutlet weak var docButton3: UIButtonX!
     @IBOutlet weak var docButton4: UIButtonX!
-    
     var docsButtonsArray = [UIButtonX]()
     
     var fetchedParts = [AssemblyPart]()
     var selectedPart = AssemblyPart()
-    
-    @IBOutlet weak var warningImageSB: UIImageView!
-    
+        
     @IBOutlet weak var partDescription: UILabelX!
     @IBOutlet weak var price: UILabelX!
     @IBOutlet weak var partNumber: UILabelX!
@@ -63,19 +62,22 @@ class AcmeBomb: UIViewController {
         buttonsArray.append(button2)
         buttonsArray.append(button3)
         buttonsArray.append(button4)
-
+        buttonsArray.append(button5)
+        
         // From .tag assign custom .name button property
         for button in buttonsArray {
             
             switch button.tag {
             case 1:
-                button.name = "58-2662-41"
+                button.name = "48-2662-41"
             case 2:
-                button.name = "58-2662-42"
+                button.name = "48-2662-42"
             case 3:
-                button.name = "58-2662-43"
+                button.name = "48-2662-43"
             case 4:
-                button.name = "58-2662-44"
+                button.name = "48-2662-44"
+            case 5:
+                button.name = "48-2662-45"
             default:
                 print("Unknown part")
                 return
@@ -103,11 +105,11 @@ class AcmeBomb: UIViewController {
             let fetchRequest = NSFetchRequest<Part>(entityName: "Part")
             fetchRequest.predicate = NSPredicate(format: "partNumber == %@", number)
             let fetchedResults = try moc?.fetch(fetchRequest)
-//            print(fetchedResults ?? "No fetched results available")
+            //            print(fetchedResults ?? "No fetched results available")
             if fetchedResults?.count == 1 {
                 print("Unique part number found!")
                 let fetchedPart = fetchedResults?.first
-
+                
                 let thisPart = AssemblyPart(initDescription: fetchedPart?.partDescription, initNumber: fetchedPart?.partNumber, initQuantity: (fetchedPart?.partQuantity)!, initServiceBulletin: (fetchedPart?.partServiceBulletin)!, initVendor: fetchedPart?.partVendor, initPriceUSD: (fetchedPart?.partPriceUSD)!, initPartDocs: (fetchedPart?.partDocs)!) // removed initSB: fetchedPart?.partSB
                 
                 
@@ -184,7 +186,7 @@ class AcmeBomb: UIViewController {
             pdfVC.view.addSubview(webView)
             
             pdfVC.edgesForExtendedLayout = [] // This ensures your view is below the navigation bar
-
+            
             pdfVC.title = pdfTitle
             self.navigationController?.pushViewController(pdfVC, animated: true)
             
@@ -193,8 +195,8 @@ class AcmeBomb: UIViewController {
     
 }
 
-//extension String {
-//    func matches(_ regex: String) -> Bool {
-//        return self.range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
-//    }
-//}
+extension String {
+    func matches(_ regex: String) -> Bool {
+        return self.range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
+    }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		481C84921F69A76600CC6EBB /* SpringTrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C84911F69A76600CC6EBB /* SpringTrap.swift */; };
 		482BD95D1F489E6F00C56FCF /* AssemblyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */; };
 		482BD95F1F496BF400C56FCF /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95E1F496BF400C56FCF /* UILabelX.swift */; };
 		482BD9611F4FACC900C56FCF /* DocumentsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		481C84911F69A76600CC6EBB /* SpringTrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTrap.swift; sourceTree = "<group>"; };
 		482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyPart.swift; sourceTree = "<group>"; };
 		482BD95E1F496BF400C56FCF /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsDetailVC.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				4874B8D11F29AFDD00F47FF0 /* InitialVC.swift */,
 				48BB0C671F2EBB9000B2ED1F /* partsTabVC.swift */,
 				489FA6D71F39A246004D02FC /* AcmeBomb.swift */,
+				481C84911F69A76600CC6EBB /* SpringTrap.swift */,
 				489FA6D51F3583C9004D02FC /* RocketSledVC.swift */,
 				48BB0C691F2EFE9D00B2ED1F /* queueTab.swift */,
 				482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */,
@@ -254,6 +257,7 @@
 				4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */,
 				48869CB01F410CC500923940 /* Order+CoreDataClass.swift in Sources */,
 				48869CB71F4201DE00923940 /* Part+CoreDataClass.swift in Sources */,
+				481C84921F69A76600CC6EBB /* SpringTrap.swift in Sources */,
 				48869CBC1F44B45E00923940 /* AssemblyTableViewCell.swift in Sources */,
 				489FA6D81F39A246004D02FC /* AcmeBomb.swift in Sources */,
 			);
