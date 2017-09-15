@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		481C84921F69A76600CC6EBB /* SpringTrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C84911F69A76600CC6EBB /* SpringTrap.swift */; };
+		481C84941F6BAA2300CC6EBB /* Diagrams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481C84931F6BAA2300CC6EBB /* Diagrams.swift */; };
 		482BD95D1F489E6F00C56FCF /* AssemblyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */; };
 		482BD95F1F496BF400C56FCF /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD95E1F496BF400C56FCF /* UILabelX.swift */; };
 		482BD9611F4FACC900C56FCF /* DocumentsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		481C84911F69A76600CC6EBB /* SpringTrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTrap.swift; sourceTree = "<group>"; };
+		481C84931F6BAA2300CC6EBB /* Diagrams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diagrams.swift; sourceTree = "<group>"; };
 		482BD95C1F489E6F00C56FCF /* AssemblyPart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssemblyPart.swift; sourceTree = "<group>"; };
 		482BD95E1F496BF400C56FCF /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsDetailVC.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				489FA6D51F3583C9004D02FC /* RocketSledVC.swift */,
 				48BB0C691F2EFE9D00B2ED1F /* queueTab.swift */,
 				482BD9601F4FACC900C56FCF /* DocumentsDetailVC.swift */,
+				481C84931F6BAA2300CC6EBB /* Diagrams.swift */,
 			);
 			name = ViewControllers;
 			path = ..;
@@ -254,6 +257,7 @@
 				482BD9611F4FACC900C56FCF /* DocumentsDetailVC.swift in Sources */,
 				48869CB31F417A0900923940 /* CoreDataStack.swift in Sources */,
 				48869C8C1F41000000923940 /* Model.xcdatamodeld in Sources */,
+				481C84941F6BAA2300CC6EBB /* Diagrams.swift in Sources */,
 				4874B8E21F2B03F200F47FF0 /* UIButtonX.swift in Sources */,
 				48869CB01F410CC500923940 /* Order+CoreDataClass.swift in Sources */,
 				48869CB71F4201DE00923940 /* Part+CoreDataClass.swift in Sources */,

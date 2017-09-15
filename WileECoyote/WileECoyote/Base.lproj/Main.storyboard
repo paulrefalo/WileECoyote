@@ -250,6 +250,9 @@
                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="tUb-U6-D85" eventType="touchUpInside" id="cKg-Rc-mtu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIO-ms-Ik5" userLabel="PDF1" customClass="UIButtonX" customModule="WileECoyote" customModuleProvider="target">
                                 <rect key="frame" x="75" y="568" width="40" height="30"/>
