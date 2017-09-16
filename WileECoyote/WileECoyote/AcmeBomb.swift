@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Contacts
 
 class AcmeBomb: UIViewController {
     
@@ -206,6 +207,9 @@ class AcmeBomb: UIViewController {
     
     
     @IBAction func addButtonPressed(_ sender: Any) {
+        let predicate: NSPredicate = CNContact.predicateForContacts(matchingName: "ReFalo")
+
+        
         print("Add this part")
         if selectedPart.number != "" {
             print(selectedPart)
