@@ -16,6 +16,13 @@ class AcmeBomb: UIViewController {
     var moc: NSManagedObjectContext?
     var fetchedResultsController : NSFetchedResultsController<Part>!
     
+    @IBOutlet weak var dimView: UIView!
+    
+    
+    // Order Popup
+    @IBOutlet var orderPopupView: UIViewX!
+    
+    
     @IBOutlet weak var button1: UIButtonX!
     @IBOutlet weak var button2: UIButtonX!
     @IBOutlet weak var button3: UIButtonX!
@@ -31,10 +38,9 @@ class AcmeBomb: UIViewController {
     
     var docsButtonsArray = [UIButtonX]()
     
+    @IBOutlet weak var addPartButton: UIButtonX!
     var fetchedParts = [AssemblyPart]()
     var selectedPart = AssemblyPart()
-    
-    @IBOutlet weak var warningImageSB: UIImageView!
     
     @IBOutlet weak var partDescription: UILabelX!
     @IBOutlet weak var price: UILabelX!
@@ -59,6 +65,10 @@ class AcmeBomb: UIViewController {
     }
     
     func configureButtons() {
+        // Inactivate Add button until a part is selected
+        addPartButton.isEnabled = false
+        addPartButton.alpha = 0.6
+        
         buttonsArray.append(button1)
         buttonsArray.append(button2)
         buttonsArray.append(button3)
@@ -125,14 +135,17 @@ class AcmeBomb: UIViewController {
     }
     
     @IBAction func partButtonPressed(_ sender: Any) {
+        
         guard let button = sender as? UIButtonX else {
             return
         }
         
-        // Loop through fetchedParts array to find which
+        // Loop through fetchedParts array to find the part
         for part in fetchedParts {
             if part.number == button.name {
                 selectedPart = part
+                addPartButton.isEnabled = true
+                addPartButton.alpha = 1.0
             }
         }
         
@@ -194,12 +207,31 @@ class AcmeBomb: UIViewController {
     
     @IBAction func addButtonPressed(_ sender: Any) {
         print("Add this part")
+        if selectedPart.number != "" {
+            print(selectedPart)
+            
+            orderPopupView.center = view.center
+            orderPopupView.alpha = 1
+            
+            orderPopupView.transform = CGAffineTransform(scaleX: 0.8, y: 1.2)
+            
+            view.addSubview(orderPopupView)
+            
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
+                self.dimView.alpha = 0.7
+                self.orderPopupView.transform = .identity
+            })
+        }
     }
     
+    @IBAction func closeOderPopup(_ sender: Any) {
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: [], animations: {
+            self.dimView.alpha = 0
+            self.orderPopupView.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        }) { (success) in
+            self.orderPopupView.removeFromSuperview()
+        }
+    }
 }
 
-//extension String {
-//    func matches(_ regex: String) -> Bool {
-//        return self.range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
-//    }
-//}
+
