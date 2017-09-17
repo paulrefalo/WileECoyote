@@ -70,23 +70,32 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
 //        
 //        navigationController?.present(controller, animated: true, completion: nil)
         
-        let contactPickerViewController = CNContactPickerViewController()
+        let contactPickerVC = CNContactPickerViewController()
         
 //        contactPickerViewController.predicateForEnablingContact = NSPredicate(format: "birthday != nil")
         
-        contactPickerViewController.delegate = self
+        contactPickerVC.delegate = self
         
-        present(contactPickerViewController, animated: true, completion: nil)
+        present(contactPickerVC, animated: true, completion: nil)
     
+        var selectedContact = CNContact()
         
-        func contactPickerDidCancel(picker: CNContactPickerViewController) {
-            print("Cancelled picking a contact")
-        }
+
         
+//        func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
+////            delegate.didFetchContacts([contact])
+//            contactPickerVC.delegate?.contactPicker!(contactPickerVC, didSelect: contact)
+//            navigationController?.popViewController(animated: true)
+//        }
+        
+        /*
         func contactPicker(picker: CNContactPickerViewController,
                            didSelectContact contact: CNContact) {
             
             print("Selected a contact")
+            selectedContact = contact
+            print(selectedContact)
+            contactPickerDidCancel(picker: contactPickerViewController)
             
             if contact.isKeyAvailable(CNContactPhoneNumbersKey){
                 //this is an extension I've written on CNContact
@@ -101,13 +110,30 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
             }
             
         }
+        */
 
+    }
+    
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        // You can fetch selected name and number in the following way
+        print("Monkey")
+        // user name
+        let userName:String = contact.givenName
+
+        // user phone number
+        let userPhoneNumbers:[CNLabeledValue<CNPhoneNumber>] = contact.phoneNumbers
+        let firstPhoneNumber:CNPhoneNumber = userPhoneNumbers[0].value
+
+        // user phone number string
+        let primaryPhoneNumberStr:String = firstPhoneNumber.stringValue
+        
+        print(contact)
+    }
+
+    func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
+        print("Cat")
     }
 
 }
 
-extension UIViewController {
-
-    
-}
 
