@@ -15,12 +15,9 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
     // MARK: Outlets
     var store = CNContactStore()
 
-    
-//    @IBOutlet weak var partsDiagram: UIButtonX!
-//    @IBOutlet weak var orderQueue: UIButtonX!
-//    @IBOutlet weak var orderHistory: UIButtonX!
 
     @IBOutlet weak var filterView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +35,14 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
             print("Not handled")
         }
         
+        let foundContact = searchForContactByName("John", last: "Appleseed")
+        if foundContact {
+            print("***********  Found Contact is: \(foundContact)")
+        } else {
+            print("Contact NOT found.  Adding Contact...  *********** ")
+            
+        }
+        
     }
     
 
@@ -47,32 +52,25 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
     }
 
     func contactsAPI() {
-        let predicate = CNContact.predicateForContacts(matchingName: "john")
-        let toFetch = [CNContactGivenNameKey, CNContactFamilyNameKey]
-        
-        do{
-            let contacts = try store.unifiedContacts(
-                matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor])
-            
-            for contact in contacts{
-                print(contact.givenName)
-                print(contact.familyName)
-                print(contact.identifier)
-            }
-            
-        } catch let err{
-            print(err)
-        }
-        
-//        let controller = CNContactPickerViewController()
+//        let predicate = CNContact.predicateForContacts(matchingName: "john")
+//        let toFetch = [CNContactGivenNameKey, CNContactFamilyNameKey]
 //        
-//        controller.delegate = self
-//        
-//        navigationController?.present(controller, animated: true, completion: nil)
+//        do {
+//            let contacts = try store.unifiedContacts(
+//                matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor])
+//            
+//            for contact in contacts{
+//                print(contact.givenName)
+//                print(contact.familyName)
+//                print(contact.identifier)
+//            }
+//            
+//        } catch let err{
+//            print(err)
+//        }
+
         
         let contactPickerVC = CNContactPickerViewController()
-        
-//        contactPickerViewController.predicateForEnablingContact = NSPredicate(format: "birthday != nil")
         
         contactPickerVC.delegate = self
         
@@ -80,37 +78,6 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
     
         var selectedContact = CNContact()
         
-
-        
-//        func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
-////            delegate.didFetchContacts([contact])
-//            contactPickerVC.delegate?.contactPicker!(contactPickerVC, didSelect: contact)
-//            navigationController?.popViewController(animated: true)
-//        }
-        
-        /*
-        func contactPicker(picker: CNContactPickerViewController,
-                           didSelectContact contact: CNContact) {
-            
-            print("Selected a contact")
-            selectedContact = contact
-            print(selectedContact)
-            contactPickerDidCancel(picker: contactPickerViewController)
-            
-            if contact.isKeyAvailable(CNContactPhoneNumbersKey){
-                //this is an extension I've written on CNContact
-//                contact.printPhoneNumbers()
-                print(contact.phoneNumbers)
-            } else {
-                /*
-                 TOOD: partially fetched, use what you've learnt in this chapter to
-                 fetch the rest of this contact
-                 */
-                print("No phone numbers are available")
-            }
-            
-        }
-        */
 
     }
     
@@ -132,6 +99,69 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
 
     func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
         print("Cat")
+    }
+    
+    func searchForContactByName(_ first: String, last: String) -> Bool {
+//        let predicate = CNContact.predicateForContacts(withIdentifiers: [last])
+        let predicate = CNContact.predicateForContacts(matchingName: last)
+
+        let toFetch = [CNContactGivenNameKey, CNContactFamilyNameKey]
+        
+        do {
+            let contacts = try store.unifiedContacts(
+                matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor])
+            
+            for contact in contacts{
+                if contact.givenName == first && contact.familyName == last {
+                    print(contact.givenName)
+                    return true
+                }
+            }
+            
+        } catch let err{
+            print(err)
+        }
+        
+        return false
+    }
+    
+    func addContact(_ first: String, last: String, company: String, street: String?, city: String?, state: String?, postalCode: String?) {
+        let contact = CNMutableContact()
+        contact.givenName = first
+        contact.familyName = last
+        contact.organizationName = company
+        
+        let workAddress = CNMutablePostalAddress()
+        if let streetString = street {
+            workAddress.street = streetString
+        }
+        if let cityString = city {
+            workAddress.city = cityString
+        }
+        if let stateString = state {
+            workAddress.state = stateString
+        }
+        if let postalCodeString = postalCode {
+            workAddress.postalCode = postalCodeString
+        }
+        
+        contact.postalAddresses = [CNLabeledValue(label:CNLabelWork, value:workAddress)]
+
+        
+        if let img = UIImage(named: "apple"),
+            let data = UIImagePNGRepresentation(img){
+            contact.imageData = data
+        }
+        
+        //finally save
+        let request = CNSaveRequest()
+        request.add(contact, toContainerWithIdentifier: nil)
+        do {
+            try store.execute(request)
+            print("Successfully stored the contact")
+        } catch let err {
+            print("Failed to save the contact. \(err)")
+        }
     }
 
 }
