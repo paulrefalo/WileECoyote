@@ -9,11 +9,13 @@
 import UIKit
 import CoreData
 import Contacts
+import ContactsUI
 
-class AcmeBomb: UIViewController {
+class AcmeBomb: UIViewController, CNContactPickerDelegate {
     
     // MARK: - Properties
-    
+    var store = CNContactStore()
+
     var moc: NSManagedObjectContext?
     var fetchedResultsController : NSFetchedResultsController<Part>!
     
@@ -206,9 +208,8 @@ class AcmeBomb: UIViewController {
     }
     
     
+    
     @IBAction func addButtonPressed(_ sender: Any) {
-        let predicate: NSPredicate = CNContact.predicateForContacts(matchingName: "ReFalo")
-
         
         print("Add this part")
         if selectedPart.number != "" {
@@ -236,6 +237,41 @@ class AcmeBomb: UIViewController {
             self.orderPopupView.removeFromSuperview()
         }
     }
+    
+    // Contacts Section
+    func contactPickerAPI() {
+        let contactPickerVC = CNContactPickerViewController()
+        contactPickerVC.delegate = self
+        present(contactPickerVC, animated: true, completion: nil)
+    }
+    
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        // You can fetch selected name and number in the following way
+        print("didSelect Contact: \(contact.givenName) \(contact.familyName)")
+    }
+    
+    func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
+        print("Did for Cancel")
+    }
+    
+    func searchForContactByName(_ first: String, last: String) -> CNContact? {
+        let predicate = CNContact.predicateForContacts(matchingName: last)
+        let toFetch = [CNContactGivenNameKey, CNContactFamilyNameKey]
+        
+        do {
+            let contacts = try store.unifiedContacts(matching: predicate, keysToFetch: toFetch as [CNKeyDescriptor])
+            
+            for contact in contacts {
+                if contact.givenName == first && contact.familyName == last {
+                    print(contact.givenName)
+                    return contact
+                }
+            }
+            
+        } catch let err {
+            print(err)
+        }
+        return nil
+    }
 }
-
 

@@ -18,15 +18,15 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        switch CNContactStore.authorizationStatus(for: .contacts){
+        switch CNContactStore.authorizationStatus(for: .contacts) {
         case .authorized:
-            contactsAPI()
+            // contactPickerAPI()
+            print("User authorized contacts")
         case .notDetermined:
             store.requestAccess(for: .contacts){succeeded, err in
                 guard err == nil && succeeded else {
                     return
                 }
-                self.contactsAPI()  // move
             }
         default:
             print("Not handled")
@@ -37,24 +37,6 @@ class InitialVC: UIViewController, CNContactPickerDelegate {
         addContact("Bugs", last: "Bunny", company: "Looney Toones", street: "What's up, Doc?", city: "Los Angeles", state: "California", postalCode: "70513", imageName: "BugsBunny")
         addContact("Wile", last: "E Coyote", company: "Genius", street: "111 Desert Way", city: "Gulch", state: "Arizaon", postalCode: "45572", imageName: "Wile")
     }
-
-    // move start
-    func contactsAPI() {
-        let contactPickerVC = CNContactPickerViewController()
-        contactPickerVC.delegate = self
-        present(contactPickerVC, animated: true, completion: nil)
-    }
-    
-    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
-        // You can fetch selected name and number in the following way
-        print("didSelect Contact")
-        print(contact)
-    }
-
-    func contactPickerDidCancel(_ picker: CNContactPickerViewController) {
-        print("Cat for Cancel")
-    }
-    // move end
     
     func searchForContactByName(_ first: String, last: String) -> Bool {
         let predicate = CNContact.predicateForContacts(matchingName: last)
